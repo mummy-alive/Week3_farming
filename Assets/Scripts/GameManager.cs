@@ -1,0 +1,62 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.Sqlite;
+using UnityEngine;
+
+
+
+public class GameManager : MonoBehaviour
+{
+    [SerializeField]
+    private int goldAmount = 500;
+    [SerializeField]
+    private List<InventorySlot> itemSlotList = new List<InventorySlot>();
+
+    public int addItemToInventory(ItemData itemData, int amount)
+    {
+        int remainSlot = MyConst.INVENTORY_SIZE - itemSlotList.Count;
+        foreach (InventorySlot inventorySlot in itemSlotList)
+        {
+
+            if((inventorySlot.itemData.name == itemData.name)) 
+            {
+                inventorySlot.amount += Math.Min(amount, (MyConst.PILE_SIZE - inventorySlot.amount));
+                amount -= Math.Min(amount, (MyConst.PILE_SIZE - inventorySlot.amount));
+            }
+        }
+        while((remainSlot > 0) && (amount > 0) ){
+            InventorySlot inventorySlot = new InventorySlot
+            {
+                amount = amount % MyConst.PILE_SIZE,
+                itemData = itemData
+            };
+            itemSlotList.Add(inventorySlot);
+            amount -= inventorySlot.amount;
+            remainSlot -= 1;
+        }
+        return amount;
+    }
+
+    public void removeItemFromInventory(int index)
+    {
+        itemSlotList.RemoveAt(index);
+    }
+
+    public void decreaseItemFromInventory(ItemData itemData, int amount)
+    {
+        foreach (InventorySlot inventorySlot in itemSlotList)
+        {
+            if((inventorySlot.itemData.name == itemData.name)) 
+            {
+                inventorySlot.amount -= Math.Min(amount, inventorySlot.amount);
+            }
+        }
+        if (amount > 0)
+        {
+            throw new ArgumentException("Parameter cannot be bigger than item amount", nameof(itemData));
+        }
+    }
+}

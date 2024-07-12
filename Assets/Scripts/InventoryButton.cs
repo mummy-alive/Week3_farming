@@ -15,20 +15,8 @@ public class InventoryButton : MonoBehaviour
         myIndex = index;
     }
 
-    public void Set(ItemSlot slot)
+    public void Set(InventorySlot slot)
     {
-        icon.gameObject.SetActive(true);
-        icon.sprite = slot.item.icon;
-        if (slot.item.stackable)
-        {
-            text.gameObject.SetActive(true);
-            text.text = slot.count.ToString();
-
-        }
-        else
-        {
-            text.gameObject.SetActive(false);
-        }
     }
 
     public void Clean()

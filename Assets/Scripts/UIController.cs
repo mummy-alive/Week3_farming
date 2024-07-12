@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryController : MonoBehaviour
+public class UIController : MonoBehaviour
 {
+
+    static int INVENTORY_SIZE = 24;
     [SerializeField] GameObject panel;
     private void Update()
     {

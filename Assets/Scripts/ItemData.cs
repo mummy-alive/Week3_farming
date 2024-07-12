@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Data/Item")]
-public class Item : ScriptableObject
+public class ItemData : ScriptableObject
 {
     internal static object gameObject;
     public string Name;

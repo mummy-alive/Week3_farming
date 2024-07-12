@@ -24,5 +24,4 @@ public class InventoryPanel : MonoBehaviour
             UIInventorySlotList.Add(inventorySlot);
         }
     }
-  
 }
