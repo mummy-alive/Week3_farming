@@ -2,14 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIInventorySlot : MonoBehaviour
+public class UIInventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    static int PILE_SIZE = 64;
 
-    private TextMeshProUGUI _amountText;
-    private Image image;
+    [SerializeField] private TextMeshProUGUI _amountText;
+    [SerializeField] private Image _image;
+    private ItemData _currItemData;
+
+    public void SetItem(InventorySlot inventorySlot)
+    {
+        _currItemData = inventorySlot.itemData;
+        _amountText.text = inventorySlot.amount.ToString();
+        _image.sprite = inventorySlot.itemData.icon;
+    }
+    public void Clean()
+    {
+        _image.sprite = null;
+        _image.gameObject.SetActive(false); 
+        _amountText.gameObject.SetActive(false);
+    }
+
+        public void OnPointerEnter(PointerEventData eventData)
+    {
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+    }
 }
 
 public class InventorySlot

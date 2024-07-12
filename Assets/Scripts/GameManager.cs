@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.Sqlite;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 
 
 public class GameManager : MonoBehaviour
 {
+    public static event Action<List<InventorySlot>> InventoryUpdateEvent;
+
     [SerializeField]
     private int goldAmount = 500;
     [SerializeField]
@@ -37,11 +40,13 @@ public class GameManager : MonoBehaviour
             amount -= inventorySlot.amount;
             remainSlot -= 1;
         }
+        InventoryUpdateEvent?.Invoke(itemSlotList);
         return amount;
     }
 
     public void removeItemFromInventory(int index)
     {
+        InventoryUpdateEvent?.Invoke(itemSlotList);
         itemSlotList.RemoveAt(index);
     }
 
@@ -58,5 +63,6 @@ public class GameManager : MonoBehaviour
         {
             throw new ArgumentException("Parameter cannot be bigger than item amount", nameof(itemData));
         }
+        InventoryUpdateEvent?.Invoke(itemSlotList);
     }
 }

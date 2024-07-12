@@ -5,13 +5,18 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
 
-    static int INVENTORY_SIZE = 24;
-    [SerializeField] GameObject panel;
+    [SerializeField] GameObject _InventoryPanel;
+    [SerializeField] ItemData _example_item;
+    [SerializeField] GameManager gameManager;
     private void Update()
     {
         if (Input.GetKey(KeyCode.I))
         {
-            panel.SetActive(!panel.activeInHierarchy);
+            _InventoryPanel.SetActive(!_InventoryPanel.activeInHierarchy);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            gameManager.addItemToInventory(_example_item, 1);
         }
     }
 
