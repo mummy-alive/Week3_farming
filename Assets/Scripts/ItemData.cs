@@ -8,6 +8,6 @@ public class ItemData : ScriptableObject
 {
     internal static object gameObject;
     public string Name;
-    public bool stackable;
+    //public bool stackable;
     public Sprite icon;
 }
