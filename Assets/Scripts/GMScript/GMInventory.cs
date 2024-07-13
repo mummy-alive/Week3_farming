@@ -12,7 +12,7 @@ public class GMInventory : MonoBehaviour {
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
     [SerializeField] private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
-    public int addItemToInventory(ItemData itemData, int amount)
+    public int AddItemToInventory(ItemData itemData, int amount)
     {
         int remainSlot = MyConst.INVENTORY_SIZE - _itemSlotList.Count;
         foreach (InventorySlot inventorySlot in _itemSlotList)
@@ -38,13 +38,13 @@ public class GMInventory : MonoBehaviour {
         return amount;
     }
 
-    public void removeItemFromInventory(int index)
+    public void RemoveItemFromInventory(int index)
     {
         InventoryUpdateEvent?.Invoke(_itemSlotList);
         _itemSlotList.RemoveAt(index);
     }
 
-    public void decreaseItemFromInventory(ItemData itemData, int amount)
+    public void DecreaseItemFromInventory(ItemData itemData, int amount)
     {
         foreach (InventorySlot inventorySlot in _itemSlotList)
         {
@@ -58,6 +58,19 @@ public class GMInventory : MonoBehaviour {
             throw new ArgumentException("Parameter cannot be bigger than item amount", nameof(itemData));
         }
         InventoryUpdateEvent?.Invoke(_itemSlotList);
+    }
+
+    public int CheckItemAmount(ItemData itemData)
+    {
+        int amount = 0;
+        foreach (InventorySlot inventorySlot in _itemSlotList)
+        {
+            if(inventorySlot.itemData.name == itemData.name) 
+            {
+                amount += inventorySlot.amount;
+            }
+        }
+        return amount;
     }
 
 

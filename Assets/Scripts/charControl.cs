@@ -5,13 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class charControl : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
+    [SerializeField] private Rigidbody2D _rigidbody2d;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float _playerSpeed = 2f;
     Vector2 motionVector;
     // Start is called before the first frame update
     void Awake()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
+        _rigidbody2d = GetComponent<Rigidbody2D>();
     }
     private void Update()
     {
@@ -19,15 +20,14 @@ public class charControl : MonoBehaviour
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
             );
+        animator.SetFloat("Horizontal", motionVector.x);
+        animator.SetFloat("Vertical", motionVector.y);
+        animator.SetFloat("Speed", motionVector.sqrMagnitude);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Move();
-    }
-    private void Move()
-    {
-        rigidbody2d.velocity = motionVector * speed;
+        _rigidbody2d.velocity = motionVector * _playerSpeed;
     }
 }
