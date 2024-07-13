@@ -5,7 +5,7 @@ using UnityEngine;
 public class UserStatus : MonoBehaviour
 {
 
-    [SerializeField] private InventorySlot selectedInventorySlot{get;}
+    public InventorySlot selectedInventorySlot{ get; private set; }
 
     // Make UserStatus a singleton object
     private static UserStatus _instance;
@@ -27,5 +27,9 @@ public class UserStatus : MonoBehaviour
         if (_instance == null) _instance = this;
         else if (_instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+    }
+    public bool IsSelectedItemSeed()
+    {
+        return selectedInventorySlot?.itemData is SeedItemData;
     }
 }

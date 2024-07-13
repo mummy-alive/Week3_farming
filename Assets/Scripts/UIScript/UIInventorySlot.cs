@@ -25,7 +25,7 @@ public class UIInventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExit
         _amountText.gameObject.SetActive(false);
     }
 
-        public void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
     }
 
