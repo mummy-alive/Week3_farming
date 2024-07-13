@@ -16,7 +16,7 @@ public class UIInventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         _currItemData = inventorySlot.itemData;
         _amountText.text = inventorySlot.amount.ToString();
-        _image.sprite = inventorySlot.itemData.icon;
+        _image.sprite = inventorySlot.itemData.Icon;
     }
     public void Clean()
     {

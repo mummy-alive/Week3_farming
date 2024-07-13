@@ -10,7 +10,7 @@ public class ItemData : ScriptableObject
     public string Name;
     public string InGameName;
     //public bool stackable;
-    public Sprite icon;
+    public Sprite Icon;
 }
 
 
@@ -30,4 +30,5 @@ public class SeedItemData : ItemData    //seed 성장정보
 public class TulipItemData : ItemData   //flower 정보
 {
     public float PriceMultiple;
+    public Sprite FarmIcon;
 }

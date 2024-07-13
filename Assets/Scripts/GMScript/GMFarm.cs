@@ -6,28 +6,28 @@ using UnityEngine;
 
 public class  GMFarm: MonoBehaviour
 {
-    public static event Action<TileFarmlandSlot, PlantData> FarmlandPlantDecideEvent;
+    public static event Action<FarmlandSlot, TulipItemData, SeedItemData> FarmlandPlantDecideEvent;
     [SerializeField]
-    private List<TileFarmlandSlot> _farmlandSlotList = new List<TileFarmlandSlot>();
+    private List<FarmlandSlot> _farmlandSlotList = new List<FarmlandSlot>();
     private SeedItemData selectedSeed;
 
     public void SelectSeed(SeedItemData seed)
     {
         selectedSeed = seed;
     }
-    public void PlantOnFarmland(TileFarmlandSlot tile) // use map_to_world to get absolute world position?
+    public void PlantOnFarmland(FarmlandSlot slot) // use map_to_world to get absolute world position?
     {   
         if(selectedSeed == null)
         {
             Debug.Log("No seed selected!");
             return;
         }
-        int remainSeed = FindRemainAmount(selectedSeed);
-        if (remainSeed > 0)
+        bool isSeed = CheckIfSeed();
+        if (isSeed)
         {
-            //GMRandomBloom.RandBloom(selectedSeed);
-            //tile.PlantSeed(selectedSeed);
-            //FarmlandPlantDecideEvent?.Invoke(tile, plant);
+            TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
+            slot.PlantSeed(selectedSeed, tulip);
+            FarmlandPlantDecideEvent?.Invoke(slot, tulip, selectedSeed);
         }
         else
         {
@@ -36,19 +36,18 @@ public class  GMFarm: MonoBehaviour
 
     }
 
-    public int FindRemainAmount(SeedItemData seed) //Return how much is left in the inventory
+    public bool CheckIfSeed()
     {
-        int cnt=5;
-        return cnt;
+        return true;
     }
 
-    public PlantData GetRandomPlant(SeedItemData seed) //Add randomFunction
+    public PlantData GetRandomPlant(SeedItemData seed)
     {
         PlantData plantData = null;
         return plantData;
     }
 
-    public void Harvest(Vector2 tilePosition)
+    public void Harvest(Vector2 slotPosition)
     {
 
 
