@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37ed76be9ae75f4da3d8df396b283ca, type: 3}
-  m_Name: Fertilizer
-  m_EditorClassIdentifier: 
-  Name: 
-  stackable: 0
+  m_Script: {fileID: 0}
+  m_Name: NupzukTulipData
+  m_EditorClassIdentifier: Assembly-CSharp::TulipItemData
+  Name: Nupzuk
+  InGameName: "\uB119\uC8FD \uD2A4\uB9BD"
   icon: {fileID: 0}
+  PriceMultiple: 20

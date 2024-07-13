@@ -10,8 +10,7 @@ using UnityEngine;
 public class GMInventory : MonoBehaviour {
 
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
-    [SerializeField]
-    private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
+    [SerializeField] private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
     public int addItemToInventory(ItemData itemData, int amount)
     {
@@ -62,6 +61,7 @@ public class GMInventory : MonoBehaviour {
     }
 
 
+    // Make GMInventory a singleton object
     private static GMInventory _instance;
 
     public static GMInventory Instance
@@ -76,7 +76,7 @@ public class GMInventory : MonoBehaviour {
             return _instance;
         }
     }
-        private void Awake()
+    private void Awake()
     {
         if (_instance == null) _instance = this;
         else if (_instance != this) Destroy(gameObject);

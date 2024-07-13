@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: RedTulipData
+  m_Name: RainbowTulipData
   m_EditorClassIdentifier: Assembly-CSharp::TulipItemData
-  Name: 
-  InGameName: 
+  Name: RainbowTulip
+  InGameName: "\uBB34\uC9C0\uAC1C \uD2A4\uB9BD"
   icon: {fileID: 0}
+  PriceMultiple: 100

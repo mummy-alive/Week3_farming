@@ -18,10 +18,16 @@ public class ItemData : ScriptableObject
 public class SeedItemData : ItemData
 {
     public int DaysToGrow;
+    public float PriceMultiple;
+    public float NProb;
+    public float RProb;
+    public float SRProb;
+    public float EXProb;
+    public float WeirdProb;
 }
 
 [CreateAssetMenu(menuName = "Data/TulipItem", fileName = "TulipData")]
 public class TulipItemData : ItemData
 {
-
+    public float PriceMultiple;
 }

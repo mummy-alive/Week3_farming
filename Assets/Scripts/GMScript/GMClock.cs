@@ -1,26 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GMClock : MonoBehaviour
 {
-    [SerializeField]
-    private bool _isClockActive = true;
-    [SerializeField]
-    private int _currGameDay = 1;
-    [SerializeField]
-    private int _currGameHour = 6;
-    [SerializeField]
-    private int _currGameMinute = 0;
-    private int _totalGameMinutePassed = 0;
-    private float _realSecPassedToday = 0f;
+    public static event Action<int, int, int> ClockChangeEvent;
+    [SerializeField] private bool _isClockActive = true;
+    [SerializeField] private int _currGameDay = 1;
+    [SerializeField] private int _currGameHour = 6;
+    [SerializeField] private int _currGameMinute = 0;
+    private int _prevGameMinute = 0;
+    private float _realSecPassed = 0f;
 
 
-    public void StartClock(){
+    private void StartClock(){
         _isClockActive = true;
     }
 
-    public void StopClock(){
+    private void StopClock(){
         _isClockActive = false;
     }
 
@@ -30,12 +28,13 @@ public class GMClock : MonoBehaviour
         UIController.CloseInventory += StartClock;
     }
 
+
     private void Update(){
         if (_isClockActive){
-            _realSecPassedToday += Time.deltaTime;
-            _currGameMinute = (int)(_realSecPassedToday * 60 / MyConst.REAL_SECOND_PER_GAME_HOUR);
+            _realSecPassed += Time.deltaTime;
+            _currGameMinute = (int)(_realSecPassed * 60 / MyConst.REAL_SECOND_PER_GAME_HOUR);
             if (_currGameMinute >= 60){
-            _realSecPassedToday = 0;
+            _realSecPassed = 0;
             _currGameHour += 1;
             }
             if (_currGameHour >= 24){
@@ -43,10 +42,13 @@ public class GMClock : MonoBehaviour
                 _currGameMinute = 0;
                 _currGameDay += 1;
             }
+            if (_prevGameMinute != _currGameMinute) 
+            ClockChangeEvent?.Invoke(_currGameDay, _currGameHour, _currGameMinute);
         }
         
     }
 
+    // Make GMClock a singleton object
     private static GMClock _instance;
     // 인스턴스에 접근하기 위한 프로퍼티
     public static GMClock Instance

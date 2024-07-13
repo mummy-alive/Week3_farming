@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryPanel : MonoBehaviour
+public class UIInventoryPanel : MonoBehaviour
 {
     [SerializeField]
     private UIInventorySlot _slotPrefab;
