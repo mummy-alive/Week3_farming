@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 7696789490669453773}
   - component: {fileID: 7511828947863872687}
   - component: {fileID: 1963399926814560535}
-  - component: {fileID: 4162239526480451189}
+  - component: {fileID: 6244393800340686533}
   m_Layer: 5
   m_Name: InventoryButton
   m_TagString: Untagged
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4162239526480451189
+--- !u!114 &6244393800340686533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,6 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b212f52c59ac74ebe081565bf08031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _amountText: {fileID: 7085294293538140958}
+  _image: {fileID: 4068866597288930062}
 --- !u!1 &9135536654764369625
 GameObject:
   m_ObjectHideFlags: 0
