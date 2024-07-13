@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,7 +15,7 @@ public class ItemData : ScriptableObject
 
 
 [CreateAssetMenu(menuName = "Data/SeedItem", fileName = "SeedData")]
-public class SeedItemData : ItemData
+public class SeedItemData : ItemData    //seed 성장정보
 {
     public int DaysToGrow;
     public float PriceMultiple;
@@ -27,7 +27,7 @@ public class SeedItemData : ItemData
 }
 
 [CreateAssetMenu(menuName = "Data/TulipItem", fileName = "TulipData")]
-public class TulipItemData : ItemData
+public class TulipItemData : ItemData   //flower 정보
 {
     public float PriceMultiple;
 }

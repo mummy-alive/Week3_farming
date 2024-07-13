@@ -1,49 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.Rendering;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class TileFarmland : MonoBehaviour
 {
-    [SerializeField]
-    private TileFarmlandSlot _slotPrefab;   //prefab?
-    [SerializeField]
-
     public Sprite emptyLandSprite;
-    public Sprite seededSprite;
-    //List<UIFarmlandSlot> UIFarmalndSlotList = new List<UIFarmlandSlot>();
+    public Sprite seededLandSprite;
+    private bool isPlanted = false;
+    private PlantData plantData;
+    private SpriteRenderer spriteRenderer;
 
-  
-    // Update is called once per frame
     private void Start()
     {
-        InitializeFarmlandUI();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = emptyLandSprite;
     }
 
-    void Update()
+    private void OnMouseDowm()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!isPlanted)
         {
-            //object? ?? ?? ?? ??... ??? ???? ??? ????
-            if (_slotPrefab != null)
-            {
-                PlantSeed();
-            }
+            //PlantSeed();
+        }
+        else
+        {
+            UnityEngine.Debug.Log("Tulips already planted here.");
         }
     }
-     
-    public void InitializeFarmlandUI()
-    {
-        for(int i=0; i<36; i++)
-        {
-            //UIFarmlandSlot farmlandSlot = ...
-
-            //UIFarmlandSlotList.Add(farmlandslot);
-        }
-    }
-
-    void PlantSeed()
-    {
-           
-    }
+    
 }
