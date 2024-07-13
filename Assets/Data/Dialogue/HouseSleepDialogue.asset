@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
   m_Name: HouseSleepDialogue
   m_EditorClassIdentifier: 
-  name: 
-  Sentences: []
+  name: HouseSleep
+  Sentences:
+  - "\uC9D1\uC73C\uB85C \uB3CC\uC544\uAC00\uC11C \uC8FC\uBB34\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
