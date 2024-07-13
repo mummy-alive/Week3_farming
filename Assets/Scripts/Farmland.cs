@@ -4,9 +4,9 @@ using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.Rendering;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-public class TileFarmland : MonoBehaviour
+/* This is to be deprecated */
+public class Farmland : MonoBehaviour
 {
     public Sprite emptyLandSprite;
     public Sprite seededLandSprite;
