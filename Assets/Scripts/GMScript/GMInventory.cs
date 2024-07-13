@@ -7,21 +7,16 @@ using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
+public class GMInventory : MonoBehaviour {
 
-
-public class GameManager : MonoBehaviour
-{
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
-
     [SerializeField]
-    private int goldAmount = 500;
-    [SerializeField]
-    private List<InventorySlot> itemSlotList = new List<InventorySlot>();
+    private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
     public int addItemToInventory(ItemData itemData, int amount)
     {
-        int remainSlot = MyConst.INVENTORY_SIZE - itemSlotList.Count;
-        foreach (InventorySlot inventorySlot in itemSlotList)
+        int remainSlot = MyConst.INVENTORY_SIZE - _itemSlotList.Count;
+        foreach (InventorySlot inventorySlot in _itemSlotList)
         {
 
             if((inventorySlot.itemData.name == itemData.name)) 
@@ -36,23 +31,23 @@ public class GameManager : MonoBehaviour
                 amount = amount % MyConst.PILE_SIZE,
                 itemData = itemData
             };
-            itemSlotList.Add(inventorySlot);
+            _itemSlotList.Add(inventorySlot);
             amount -= inventorySlot.amount;
             remainSlot -= 1;
         }
-        InventoryUpdateEvent?.Invoke(itemSlotList);
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
         return amount;
     }
 
     public void removeItemFromInventory(int index)
     {
-        InventoryUpdateEvent?.Invoke(itemSlotList);
-        itemSlotList.RemoveAt(index);
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
+        _itemSlotList.RemoveAt(index);
     }
 
     public void decreaseItemFromInventory(ItemData itemData, int amount)
     {
-        foreach (InventorySlot inventorySlot in itemSlotList)
+        foreach (InventorySlot inventorySlot in _itemSlotList)
         {
             if((inventorySlot.itemData.name == itemData.name)) 
             {
@@ -63,6 +58,28 @@ public class GameManager : MonoBehaviour
         {
             throw new ArgumentException("Parameter cannot be bigger than item amount", nameof(itemData));
         }
-        InventoryUpdateEvent?.Invoke(itemSlotList);
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
+    }
+
+
+    private static GMInventory _instance;
+
+    public static GMInventory Instance
+    {
+        get {
+            if(!_instance)
+            {
+                _instance = FindObjectOfType(typeof(GMInventory)) as GMInventory;
+                if (_instance == null)
+                    Debug.Log("no Singleton inventory");
+            }
+            return _instance;
+        }
+    }
+        private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else if (_instance != this) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 }

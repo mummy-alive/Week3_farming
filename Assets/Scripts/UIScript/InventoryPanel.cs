@@ -8,11 +8,11 @@ public class InventoryPanel : MonoBehaviour
     private UIInventorySlot _slotPrefab;
     [SerializeField]
     private RectTransform _inventoryPanel;
-    List<UIInventorySlot> UIInventorySlotList = new List<UIInventorySlot>();
+    private List<UIInventorySlot> _UIInventorySlotList = new List<UIInventorySlot>();
     private void Start()
     {
         InitializeInventoryUI();
-        GameManager.InventoryUpdateEvent += UIInventoryUpdate;
+        GMInventory.InventoryUpdateEvent += UIInventoryUpdate;
     }
     public void InitializeInventoryUI()
     {
@@ -21,7 +21,7 @@ public class InventoryPanel : MonoBehaviour
             UIInventorySlot inventorySlot =
                 Instantiate(_slotPrefab, Vector3.zero, Quaternion.identity);
             inventorySlot.transform.SetParent(_inventoryPanel);
-            UIInventorySlotList.Add(inventorySlot);
+            _UIInventorySlotList.Add(inventorySlot);
         }
     }
 
@@ -29,7 +29,7 @@ public class InventoryPanel : MonoBehaviour
     {
         for (int i = 0; i < inventorySlots.Count; i++)
         {
-            UIInventorySlotList[i].SetItem(inventorySlots[i]);
+            _UIInventorySlotList[i].SetItem(inventorySlots[i]);
         } 
     }
 }
