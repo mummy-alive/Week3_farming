@@ -22,10 +22,19 @@ public class GMClock : MonoBehaviour
         _isClockActive = false;
     }
 
+    private void StartNextDay()
+    {
+        _currGameHour = 6;
+        _currGameMinute = 0;
+        _currGameDay += 1;
+        _realSecPassed = 0f;
+    }
+
     private void Start()
     {
         UIController.OpenInventory += StopClock;
         UIController.CloseInventory += StartClock;
+        House.SleepUntilNextDay += StartNextDay;
     }
 
 
@@ -38,9 +47,7 @@ public class GMClock : MonoBehaviour
             _currGameHour += 1;
             }
             if (_currGameHour >= 24){
-                _currGameHour = 6;
-                _currGameMinute = 0;
-                _currGameDay += 1;
+                StartNextDay();
             }
             if (_prevGameMinute != _currGameMinute) 
             ClockChangeEvent?.Invoke(_currGameDay, _currGameHour, _currGameMinute);
