@@ -13,7 +13,7 @@ public class charControl : MonoBehaviour
 
     private void Start()
     {
-        UIDialogue.OpenDialogueUI += ( () => {_canMove = false; } );
+        UIDialogue.OpenDialogueUI += ( () => {_canMove = false; _rigidbody2d.velocity = new Vector2(0,0); } );
         UIDialogue.CloseDialogueUI += ( () => {_canMove = true;} );
 
     }

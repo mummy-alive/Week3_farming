@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328af1239270371479a9df9d570a8c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _askSleepDialog: {fileID: 0}
+  _askSleepDialog: {fileID: 11400000, guid: 8226907287fe0c14c8c49fe85bf06af6, type: 2}
 --- !u!1 &135013115
 GameObject:
   m_ObjectHideFlags: 0

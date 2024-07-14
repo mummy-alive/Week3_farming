@@ -5,6 +5,7 @@ using UnityEngine;
 public class GMClock : MonoBehaviour
 {
     public static event Action<int, int, int> ClockChangeEvent;
+    public static event Action DayChangeEvent;
     [SerializeField] private bool _isClockActive = true;
     [SerializeField] private int _currGameDay = 1;
     [SerializeField] private int _currGameHour = 6;
@@ -25,6 +26,7 @@ public class GMClock : MonoBehaviour
         _currGameMinute = 0;
         _currGameDay += 1;
         _realSecPassed = 0f;
+        DayChangeEvent?.Invoke();
     }
     private void Start()
     {
