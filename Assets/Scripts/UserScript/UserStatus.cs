@@ -36,8 +36,4 @@ public class UserStatus : MonoBehaviour
         else if (_instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
     }
-    public bool IsSelectedItemSeed()
-    {
-        return selectedInventorySlot?.itemData is SeedItemData;
-    }
 }
