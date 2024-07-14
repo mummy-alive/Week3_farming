@@ -37,6 +37,10 @@ public class UIController : MonoBehaviour
                 OpenInventory?.Invoke();
             }
         }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            GMInventory.Instance.AddItemToInventory(_example_item, 1);
+        }
     }
 
 }
