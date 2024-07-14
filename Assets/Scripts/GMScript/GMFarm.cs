@@ -13,7 +13,6 @@ public class  GMFarm: MonoBehaviour
     
     [SerializeField]
     private List<FarmlandSlot> _farmlandSlotList = new List<FarmlandSlot>();
-    private SeedItemData selectedSeed;
 
     private void Awake()
     {
@@ -21,38 +20,41 @@ public class  GMFarm: MonoBehaviour
         else if (Instance !=this)
             Destroy(gameObject);
     }
-    public void SelectSeed(SeedItemData seed)
+    public SeedItemData SelectSeed()
     {
         UserStatus userStatus = UserStatus.Instance;
-        if (userStatus = null)
+        if (userStatus == null)
         {
             Debug.Log("UserStatus is Null!");
-            return;
+            return null;
         }
+
         if (userStatus.selectedInventorySlot?.itemData is SeedItemData)
         {
-            selectedSeed = userStatus.selectedInventorySlot.itemData as SeedItemData;
-            if (selectedSeed == null)
+            SeedItemData seed = userStatus.selectedInventorySlot.itemData as SeedItemData;
+            if (seed == null)
             {
                 Debug.Log("Selected Seed has null data!");
-                return;
+                return null;
             }
-
-        } else
+            return seed;
+        }
+        else
         {
             Debug.Log("Please select seed.");
-            return;
+            return null;
         }  
     }
-    public void PlantOnFarmland(FarmlandSlot slot, Vector2 position) // use map_to_world to get absolute world position?
+    public void PlantOnFarmland(FarmlandSlot slot, Vector2 position)
     {
+        SeedItemData selectedSeed = SelectSeed();
         UserStatus userStatus = UserStatus.Instance;
         if (userStatus == null)
         {
             Debug.Log("No seed selected!");
             return;
         }
-        if (userStatus.selectedInventorySlot?.itemData is SeedItemData)
+        if (selectedSeed != null)
         {
             TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
             slot.PlantSeed(selectedSeed, tulip, position);
@@ -60,15 +62,9 @@ public class  GMFarm: MonoBehaviour
         }
         else
         {
-            Debug.Log("Not enough seeds left to plant!");
+            Debug.Log("Not enough seeds left to plant or is not seed");
         }
 
-    }
-
-    public PlantData GetRandomPlant(SeedItemData seed)
-    {
-        PlantData plantData = null;
-        return plantData;
     }
 
     public void Harvest(Vector2 slotPosition)
