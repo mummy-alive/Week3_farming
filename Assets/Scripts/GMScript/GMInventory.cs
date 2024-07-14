@@ -12,6 +12,7 @@ public class GMInventory : MonoBehaviour {
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
     [SerializeField] private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
+
     public int AddItemToInventory(ItemData itemData, int amount)
     {
         int remainSlot = MyConst.INVENTORY_SIZE - _itemSlotList.Count;

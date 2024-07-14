@@ -45,7 +45,8 @@ public class FarmlandSlot: MonoBehaviour
         isPlanted = true;
         daysLeft = seed.DaysToGrow;
         currentTulip = tulip;
-        Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
+        GameObject plant = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
+        plant.transform.SetParent(gameObject.transform);
     }
     public void PlantGrow() 
     {

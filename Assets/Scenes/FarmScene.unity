@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fa538f19f3ed546a01880433d4b7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantedPlantPrefab: {fileID: 0}
+  plantedPlantPrefab: {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
 --- !u!61 &1062312787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e921ba5c180d898499198524205fd6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestSeed: {fileID: 0}
+  TestSeed: {fileID: 11400000, guid: dd4113e8a9c420f4abe3af208c1a9cf2, type: 2}
   _farmlandSlotList:
   - {fileID: 1062312786}
 --- !u!1 &1290423379
