@@ -10,9 +10,22 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject _InventoryPanel;
     [SerializeField] GameObject _ReducedInventoryPanel;
     [SerializeField] ItemData _example_item;
+    private bool _canOpenInventory;
+
+    private void Start()
+    {
+        UIDialogue.OpenDialogueUI += 
+        ( () => {
+            _canOpenInventory = false; 
+            _InventoryPanel.SetActive(false);} );
+        UIDialogue.CloseDialogueUI += ( () => {
+            _canOpenInventory = true;
+            _ReducedInventoryPanel.SetActive(true);} );
+
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (_canOpenInventory && Input.GetKeyDown(KeyCode.I))
         {
             if (_InventoryPanel.activeInHierarchy){
                 _InventoryPanel.SetActive(false);

@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: HouseSleepDialogue
   m_EditorClassIdentifier: 
   name: HouseSleep
-  Sentences:
-  - "\uC9D1\uC73C\uB85C \uB3CC\uC544\uAC00\uC11C \uC8FC\uBB34\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  Sentence: "\uC9D1\uC73C\uB85C \uB3CC\uC544\uAC00\uC11C \uC8FC\uBB34\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  HasReplyOption: 1
+  ReplyOption1: "\uC608"
+  ReplyOption2: "\uC544\uB2C8\uC624"

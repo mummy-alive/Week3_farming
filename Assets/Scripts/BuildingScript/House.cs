@@ -7,13 +7,13 @@ public class House : MonoBehaviour
 {
     public static event Action SleepUntilNextDay;
     [SerializeField] private Dialogue dialogue;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private async void OnCollisionEnter2D(Collision2D collision)
     {
         print("collided with house");
         if (collision.collider.CompareTag("Player"))
         {
-            DialogueReply reply = UIDialogue.Instance.StartDialogue(dialogue);
-            if (reply == DialogueReply.None) SleepUntilNextDay?.Invoke();
+            DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(dialogue);
+            if (reply == DialogueReply.Option1) SleepUntilNextDay?.Invoke();
         }
     }
 }

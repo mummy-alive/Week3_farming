@@ -10,6 +10,7 @@ public class GMDataHolder : MonoBehaviour
     public List<TulipItemData> SRTulipItemDatas;
     public List<TulipItemData> EXTulipItemDatas;
     public List<TulipItemData> WeirdTulipItemDatas;
+    public UIDialogue UIDialogue;
 
     // Make DataHolder a singleton object
     private static GMDataHolder _instance;

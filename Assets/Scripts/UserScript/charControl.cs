@@ -8,6 +8,15 @@ public class charControl : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody2d;
     [SerializeField] private Animator animator;
     [SerializeField] private float _playerSpeed = 2f;
+
+    private bool _canMove = true;
+
+    private void Start()
+    {
+        UIDialogue.OpenDialogueUI += ( () => {_canMove = false; } );
+        UIDialogue.CloseDialogueUI += ( () => {_canMove = true;} );
+
+    }
     Vector2 motionVector;
     // Start is called before the first frame update
     void Awake()
@@ -28,6 +37,6 @@ public class charControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        _rigidbody2d.velocity = motionVector * _playerSpeed;
+        if (_canMove) _rigidbody2d.velocity = motionVector * _playerSpeed;
     }
 }

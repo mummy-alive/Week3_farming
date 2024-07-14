@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TMPro;
 using Unity.VisualScripting.FullSerializer;
 using UnityEditor.VersionControl;
@@ -16,7 +17,8 @@ public class UIDialogue : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject _dialoguePanel;
     [SerializeField] private Button _dialoguePanelAsButton;
     [SerializeField] private GameObject _replyPanel;
-    public DialogueReply StartDialogue(Dialogue dialogue)
+    [SerializeField] private UIDialogueReply _dialogueReply;
+    public async Task<DialogueReply> StartDialogueAsync(Dialogue dialogue)
     {
         OpenDialogueUI?.Invoke();
         _dialoguePanel.SetActive(true);
@@ -25,7 +27,10 @@ public class UIDialogue : MonoBehaviour, IPointerClickHandler
         if (dialogue.HasReplyOption)
         {
             _replyPanel.SetActive(true);
-            return DialogueReply.Option1;
+            print("replay panel is shown");
+            DialogueReply reply = await _dialogueReply.StartAndWaitReply(dialogue);
+            EndDialogue();
+            return reply;
         }
         else
         {
@@ -44,50 +49,4 @@ public class UIDialogue : MonoBehaviour, IPointerClickHandler
         _dialoguePanel.SetActive(false);
         CloseDialogueUI?.Invoke();
     }
-    private static UIDialogue _instance;
-    // 인스턴스에 접근하기 위한 프로퍼티
-    public static UIDialogue Instance
-    {
-        get
-        {
-            // 인스턴스가 없는 경우에 접근하려 하면 인스턴스를 할당해준다.
-            if (!_instance)
-            {
-                _instance = FindObjectOfType(typeof(UIDialogue)) as UIDialogue;
-                if (_instance == null)
-                    Debug.Log("no Singleton obj");
-            }
-            return _instance;
-        }
-    }
-    private void Awake()
-    {
-        if (_instance == null)
-        {
-            _instance = this;
-        }
-        else if (_instance != this)
-        {
-            Destroy(gameObject);
-        }
-        DontDestroyOnLoad(gameObject);
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-Message Fjfundd Vicwioe
-
-
-
-
-
-
