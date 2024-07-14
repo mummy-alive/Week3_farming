@@ -5,11 +5,19 @@ using UnityEngine;
 public class UserStatus : MonoBehaviour
 {
 
-    public InventorySlot selectedInventorySlot{ get; private set; }
+    public InventorySlot selectedInventorySlot{get; private set;}
 
+    private void Start()
+    {
+        UIInventorySlot.InventorySlotSelect +=SetSelectedInventorySlot;
+    }
+
+    private void SetSelectedInventorySlot(UIInventorySlot selectedSlot)
+    {
+        selectedInventorySlot = selectedSlot.currInventorySlot;
+    }
     // Make UserStatus a singleton object
     private static UserStatus _instance;
-
     public static UserStatus Instance
     {
         get {

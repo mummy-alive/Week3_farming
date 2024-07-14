@@ -6,32 +6,32 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class FarmlandSlot: MonoBehaviour
-{    public GameObject plantedPlantPrefab ;
+{    
+    public GameObject plantedPlantPrefab ;
     private bool isPlanted = false;
     private TulipItemData currentTulip;
     private int daysLeft;
     private Vector2 midPoint;
 
+    Renderer rend;
+
     private void Start()
     {
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
         midPoint = transform.position;
+        rend = GetComponent<Renderer>();
     }
-    private void OnMouseDown()
+    /*private void OnMouseDown()
     {
          Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-         print("This is working");
          GMFarm.Instance.PlantOnFarmland(this, clickPosition);
-    }
-    /*private void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject()) 
-        {
-            Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            GMFarm.Instance.PlantOnFarmland(this, clickPosition);
-        }
     }*/
+    private void OnMouseDown()
+    {
+        Vector2 center = rend.bounds.center;
+        print("This is working");  /*ToDo: Cleanup */
+        GMFarm.Instance.PlantOnFarmland(this, center);
+    }
     private void CheckIfMe(FarmlandSlot slot, TulipItemData tulip, SeedItemData seed, Vector2 position) 
     {
         if (slot != this)
