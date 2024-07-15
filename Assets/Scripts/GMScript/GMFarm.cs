@@ -59,6 +59,7 @@ public class  GMFarm: MonoBehaviour
             TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
             slot.PlantSeed(selectedSeed, tulip, position);
             FarmlandPlantDecideEvent?.Invoke(slot, tulip, selectedSeed, position);
+            GMInventory.Instance.DecreaseItemFromInventory(selectedSeed, 1);
         }
         else
         {
