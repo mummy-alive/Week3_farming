@@ -683,7 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _InventoryPanel: {fileID: 192267185}
   _ReducedInventoryPanel: {fileID: 2055274711}
-  _example_item: {fileID: 11400000, guid: 415931ece742b1a468f09acc2f869a7b, type: 2}
+  _example_item: {fileID: 11400000, guid: dd4113e8a9c420f4abe3af208c1a9cf2, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,6 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _DefaultItemList:
   - {fileID: 11400000, guid: 3715092d7fd62474a9a67e2548457670, type: 2}
+  - {fileID: 11400000, guid: 9e6a5a93e4f54ba469847dc9df65e4ce, type: 2}
 --- !u!114 &1274710324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _farmlandSlotList:
   - {fileID: 1062312786}
+  _askDialogue: {fileID: 11400000, guid: ae93a1c7ed355e74a8ec5003d02c3511, type: 2}
 --- !u!114 &1274710328
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -87,7 +87,10 @@ public class FarmlandSlot: MonoBehaviour
     public void WaterPlant() 
     {
         if (daysLeft <= 0)
+        {
+            Debug.Log("This plant is watered enough!");
             return;
+        }
         if (!isAlreadyWatered)
         {
             isAlreadyWatered = true;
