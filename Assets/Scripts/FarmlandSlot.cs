@@ -116,10 +116,15 @@ public class FarmlandSlot: MonoBehaviour
     }
 
     public TulipItemData Harvest()
-    {
-        //daysLeft = 0;     //for debugging harvest
+    {       
         if (daysProgress >= daysRequired)
         {
+            UserStatus userStatus = UserStatus.Instance;
+            if(GMInventory.Instance.AddItemToInventory(currentTulip,1) > 0 )
+            {
+                Debug.Log("Inventory is full!");
+                return null;
+            }
             isPlanted = false;
             if (plantedPlantPrefab != null)
             {
