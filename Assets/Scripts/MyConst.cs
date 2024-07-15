@@ -10,6 +10,7 @@ public class MyConst {
     public static int TOTAL_GAME_DAYS = 80;
     public static int MAX_HOURS_AWAKE = 18;
     public static int REAL_SECOND_PER_GAME_HOUR = 2;
+    public static int BOAT_RETURN_DAYS = 1;
 
     private static List<double> _priceList = new List<double>
     {

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BankScene.unity
     guid: c6a8615a7a565ee4ea544e0b11fd99bc
+  - enabled: 0
+    path: Assets/Scenes/EastIndiaScene.unity
+    guid: 852fa9c557c952249ae38068edf8b0e1
   m_configObjects: {}

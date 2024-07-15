@@ -83,6 +83,47 @@ public class GMInventory : MonoBehaviour {
         return amount;
     }
 
+    public void sortInventory()
+    {
+        Dictionary<ItemData, int> mergedDict = new Dictionary<ItemData, int>();
+        foreach (InventorySlot inventorySlot in _itemSlotList)
+        {
+            if (mergedDict.ContainsKey(inventorySlot.itemData))
+            {
+                mergedDict[inventorySlot.itemData] += inventorySlot.amount;
+            }
+            else
+            {
+                mergedDict[inventorySlot.itemData] = inventorySlot.amount;
+            }
+        }
+        _itemSlotList = new List<InventorySlot>();
+        foreach (var kvp in mergedDict)
+        {
+            ItemData key = kvp.Key;
+            int value = kvp.Value;
+
+            // Break down values greater than 64 into multiple tuples
+            while (value > 64)
+            {
+                InventorySlot slot = new InventorySlot();
+                slot.itemData = key;
+                slot.amount = 64;
+                _itemSlotList.Add(slot);
+                value -= 64;
+            }
+
+            if (value > 0)
+            {
+                InventorySlot slot = new InventorySlot();
+                slot.itemData = key;
+                slot.amount = value;
+                _itemSlotList.Add(slot);
+            }
+        }
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
+    }
+
 
     // Make GMInventory a singleton object
     private static GMInventory _instance;

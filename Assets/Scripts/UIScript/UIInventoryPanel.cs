@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class UIInventoryPanel : MonoBehaviour
 {
     [SerializeField] private UIInventorySlot _slotPrefab;
     [SerializeField] private RectTransform _inventoryPanel;
+    [SerializeField] private Button _sortButton;
     private List<UIInventorySlot> _UIInventorySlotList = new List<UIInventorySlot>();
     private void Start()
     {
         InitializeInventoryUI();
         GMInventory.InventoryUpdateEvent += UIInventoryUpdate;
+        _sortButton.onClick.AddListener(sortInventory);
+    }
+    private void sortInventory()
+    {
+        GMInventory.Instance.sortInventory();
     }
     public void InitializeInventoryUI()
     {
