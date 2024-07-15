@@ -12,10 +12,13 @@ public class GMInventory : MonoBehaviour {
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
     [SerializeField] private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
+    [SerializeField] private List<ItemData> _DefaultItemList;
 
     private void Start()
     {
-
+        foreach (ItemData item in _DefaultItemList)
+            GMInventory.Instance.AddItemToInventory(item, 1);
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
     }
     public int AddItemToInventory(ItemData itemData, int amount)
     {

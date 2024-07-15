@@ -68,6 +68,27 @@ public class  GMFarm: MonoBehaviour
 
     }
 
+    public void WaterOnFarmland(FarmlandSlot slot)
+    {
+        UserStatus userStatus = UserStatus.Instance;
+        if(userStatus == null)
+        {
+            Debug.Log("No farm selected!");
+            return;
+        }
+        if (userStatus.selectedInventorySlot?.itemData is ToolItemData && 
+           userStatus.selectedInventorySlot.itemData.Name == "Watering can")
+        {   
+            slot.WaterPlant();
+        }
+        else
+        {
+            Debug.Log("You need water can to water the plant.");
+            return;
+        }
+    }
+
+
     public void HarvestOnFarmland(FarmlandSlot slot)
     {
         UserStatus userStatus = UserStatus.Instance;

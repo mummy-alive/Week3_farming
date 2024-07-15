@@ -71,8 +71,10 @@ public class FarmlandSlot: MonoBehaviour
         plantedPlantInstance = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
         plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
-    public void PlantGrow() 
+    public void WaterPlant() 
     {
+        // 오늘 물 줬는지 확인
+        daysLeft--;
         // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
     }
 
