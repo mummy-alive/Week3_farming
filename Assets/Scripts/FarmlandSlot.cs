@@ -40,11 +40,18 @@ public class FarmlandSlot: MonoBehaviour
                 GMFarm.Instance.HarvestOnFarmland(this);
 
         }
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        {
+            if (!isAlreadyWatered)
+                GMFarm.Instance.WaterOnFarmland(this);
+        }
     }
+
     private void NewWateringChance()
     {
         isAlreadyWatered = false;   
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -84,6 +91,7 @@ public class FarmlandSlot: MonoBehaviour
         {
             isAlreadyWatered = true;
             daysLeft--;
+            print("Watered successfully!");
             GrowProgress();
         }
         else
@@ -96,7 +104,7 @@ public class FarmlandSlot: MonoBehaviour
     }
     public TulipItemData Harvest()
     {
-        daysLeft = 0;     //for debugging harvest
+        //daysLeft = 0;     //for debugging harvest
         if (daysLeft <= 0)
         {
             isPlanted = false;
@@ -105,6 +113,10 @@ public class FarmlandSlot: MonoBehaviour
                 Destroy(plantedPlantInstance);
                 plantedPlantInstance = null;
             }
+        }
+        else
+        {
+            Debug.Log("The flower's not bloomed yet!");
         }
         return currentTulip;
     }
