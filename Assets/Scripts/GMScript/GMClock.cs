@@ -20,6 +20,10 @@ public class GMClock : MonoBehaviour
     {
         _isClockActive = false;
     }
+    public int GetGameDay()
+    {
+        return _currGameDay;
+    }
     private void StartNextDay()
     {
         _currGameHour = 6;

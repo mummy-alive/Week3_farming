@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8707c3648f5f00d41933b87b18b28e3e, type: 3}
+  m_Name: SRSeedData
+  m_EditorClassIdentifier: 
+  Name: SRSeed
+  InGameName: "\uC2E0\uBE44\uD55C \uC528\uC557"
+  Icon: {fileID: 0}
+  DaysToGrow: 4
+  PriceMultiple: 5
+  NProb: 30
+  RProb: 50
+  SRProb: 18.48
+  EXProb: 1.5
+  WeirdProb: 0.02

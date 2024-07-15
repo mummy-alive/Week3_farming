@@ -7,46 +7,47 @@ public class GMGold : MonoBehaviour
 {
     public static event Action<int> GoldAmountChangeEvent;
     public static event Action<int> DebtAmountChangeEvent;
-    [SerializeField] private int _currGoldAmount;
-    [SerializeField] private int _currDebtAmount;
+    public int CurrGoldAmount{get; private set;}
+    public int CurrDebtAmount{get; private set;}
 
     public void EarnGold(int amount)
     {
-        _currGoldAmount += amount;
-        GoldAmountChangeEvent?.Invoke(_currGoldAmount);
+        CurrGoldAmount += amount;
+        GoldAmountChangeEvent?.Invoke(CurrGoldAmount);
     }
     public bool CheckAndUseGold (int amount)
     {
-        if (_currGoldAmount < amount) 
+        if (CurrGoldAmount < amount) 
             return false;
         else
         {
-            _currGoldAmount -= amount;
-            GoldAmountChangeEvent?.Invoke(_currGoldAmount);
+            CurrGoldAmount -= amount;
+            GoldAmountChangeEvent?.Invoke(CurrGoldAmount);
             return true;
         }
     }
+    
     public bool CheckAndPayDebt(int amount)
     {
-        if (_currDebtAmount < amount) 
+        if (CurrDebtAmount < amount) 
             return false;
         else
         {
-            _currDebtAmount -= amount;
-            DebtAmountChangeEvent?.Invoke(_currDebtAmount);
+            CurrDebtAmount -= amount;
+            DebtAmountChangeEvent?.Invoke(CurrDebtAmount);
             return true;
         } 
     }
     public void IncreaseDebt(int amount)
     {
-        _currDebtAmount += amount;
-        DebtAmountChangeEvent?.Invoke(_currDebtAmount);
+        CurrDebtAmount += amount;
+        DebtAmountChangeEvent?.Invoke(CurrDebtAmount);
     }
 
     private void Start()
     {
-        GoldAmountChangeEvent?.Invoke(_currGoldAmount);
-        DebtAmountChangeEvent?.Invoke(_currDebtAmount);
+        GoldAmountChangeEvent?.Invoke(CurrGoldAmount);
+        DebtAmountChangeEvent?.Invoke(CurrDebtAmount);
     }
 
     // Make GMGold a singleton object
