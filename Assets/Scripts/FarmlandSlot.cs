@@ -13,6 +13,7 @@ public class FarmlandSlot: MonoBehaviour
     private bool isPlanted = false;
     private TulipItemData currentTulip;
     private int daysLeft;
+    private bool isAlreadyWatered = false;
     private Vector2 midPoint;
     private bool playerIsOnSlot = false;
 
@@ -21,6 +22,7 @@ public class FarmlandSlot: MonoBehaviour
     private void Start()
     {
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
+        GMClock.DayChangeEvent += NewWateringChance;
         midPoint = transform.position;
         rend = GetComponent<Renderer>();
     }
@@ -38,7 +40,18 @@ public class FarmlandSlot: MonoBehaviour
                 GMFarm.Instance.HarvestOnFarmland(this);
 
         }
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        {
+            if (!isAlreadyWatered)
+                GMFarm.Instance.WaterOnFarmland(this);
+        }
     }
+
+    private void NewWateringChance()
+    {
+        isAlreadyWatered = false;   
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -64,7 +77,6 @@ public class FarmlandSlot: MonoBehaviour
     public void PlantSeed(SeedItemData seed, TulipItemData tulip, Vector2 Position)
     {
         if(isPlanted) return;
-
         isPlanted = true;
         daysLeft = seed.DaysToGrow;
         currentTulip = tulip;
@@ -73,14 +85,26 @@ public class FarmlandSlot: MonoBehaviour
     }
     public void WaterPlant() 
     {
-        // 오늘 물 줬는지 확인
-        daysLeft--;
-        // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
+        if (daysLeft <= 0)
+            return;
+        if (!isAlreadyWatered)
+        {
+            isAlreadyWatered = true;
+            daysLeft--;
+            print("Watered successfully!");
+            GrowProgress();
+        }
+        else
+            Debug.Log("This plant is already watered! Try tomorrow");         
     }
 
+    private void GrowProgress()
+    {
+        // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
+    }
     public TulipItemData Harvest()
     {
-        daysLeft = 0;     //for debugging harvest
+        //daysLeft = 0;     //for debugging harvest
         if (daysLeft <= 0)
         {
             isPlanted = false;
@@ -89,6 +113,10 @@ public class FarmlandSlot: MonoBehaviour
                 Destroy(plantedPlantInstance);
                 plantedPlantInstance = null;
             }
+        }
+        else
+        {
+            Debug.Log("The flower's not bloomed yet!");
         }
         return currentTulip;
     }
