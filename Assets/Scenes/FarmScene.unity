@@ -1324,9 +1324,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1062312789}
+  - component: {fileID: 1062312786}
   - component: {fileID: 1062312788}
   - component: {fileID: 1062312787}
-  - component: {fileID: 1062312786}
   - component: {fileID: 1062312790}
   m_Layer: 0
   m_Name: FarmLandSlot
@@ -1347,7 +1347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fa538f19f3ed546a01880433d4b7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantedPlantPrefab: {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
+  plantedPlantPrefab:
+  - {fileID: 806421335278880001, guid: a72338f1b59443d428ecb71e79491907, type: 3}
+  - {fileID: 8154053017768571382, guid: 1be26fa17fee3f3469017e43e7b18489, type: 3}
+  - {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
   plantedPlantInstance: {fileID: 0}
 --- !u!61 &1062312787
 BoxCollider2D:
@@ -1434,7 +1437,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 931802432, guid: e4bc6e497743fc347954b6ac0bacfc46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
