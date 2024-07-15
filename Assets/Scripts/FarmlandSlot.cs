@@ -8,7 +8,8 @@ using UnityEngine.EventSystems;
 
 public class FarmlandSlot: MonoBehaviour
 {    
-    public GameObject plantedPlantPrefab ;
+    public GameObject plantedPlantPrefab;
+    public GameObject plantedPlantInstance;
     private bool isPlanted = false;
     private TulipItemData currentTulip;
     private int daysLeft;
@@ -28,9 +29,11 @@ public class FarmlandSlot: MonoBehaviour
     {
         if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
         {
-            //Ask if player's really gonna plant em
             if (!isPlanted)
+            {
+                //Ask if player's really gonna plant em
                 GMFarm.Instance.PlantOnFarmland(this, midPoint);
+            }
             else
                 GMFarm.Instance.HarvestOnFarmland(this);
 
@@ -65,8 +68,8 @@ public class FarmlandSlot: MonoBehaviour
         isPlanted = true;
         daysLeft = seed.DaysToGrow;
         currentTulip = tulip;
-        GameObject plant = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
-        plant.transform.SetParent(gameObject.transform);
+        plantedPlantInstance = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
+        plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
     public void PlantGrow() 
     {
@@ -75,15 +78,15 @@ public class FarmlandSlot: MonoBehaviour
 
     public TulipItemData Harvest()
     {
+        daysLeft = 0;     //for debugging harvest
         if (daysLeft <= 0)
         {
             isPlanted = false;
             plantedPlantPrefab = GameObject.Find("Field");
-            Destroy(plantedPlantPrefab);
-            return currentTulip;
+            Destroy(plantedPlantInstance);
+            plantedPlantInstance = null;
         }
-        else
-            return null;
+        return currentTulip;
     }
 
     private void OnDestroy()
