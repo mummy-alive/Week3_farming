@@ -19,7 +19,14 @@ public class FarmlandSlot: MonoBehaviour
     private bool playerIsOnSlot = false;
 
     Renderer rend;
-
+    private void FarmInit()
+    {
+        this.isPlanted = false;
+        this.currentTulip = null;
+        this.daysProgress = 0;
+        this.daysRequired = 0;
+        this.isAlreadyWatered= false;
+    }
     private void Start()
     {
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
@@ -125,7 +132,7 @@ public class FarmlandSlot: MonoBehaviour
                 Debug.Log("Inventory is full!");
                 return null;
             }
-            isPlanted = false;
+            FarmInit();
             if (plantedPlantPrefab != null)
             {
                 Destroy(plantedPlantInstance);
