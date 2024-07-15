@@ -22,7 +22,7 @@ public class FarmlandSlot: MonoBehaviour
     private void Start()
     {
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
-        GMClock.DayChangeEvent += NewWateringChance;
+        GMClock.DayChangeEvent += FarmDateChange;
         midPoint = transform.position;
         rend = GetComponent<Renderer>();
     }
@@ -47,9 +47,10 @@ public class FarmlandSlot: MonoBehaviour
         }
     }
 
-    private void NewWateringChance()
+    private void FarmDateChange()
     {
-        isAlreadyWatered = false;   
+        isAlreadyWatered = false;  
+        // 식물 자라는 코드 추가
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

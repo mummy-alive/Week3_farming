@@ -97,10 +97,14 @@ public class  GMFarm: MonoBehaviour
             Debug.Log("Nothing selected");
             return; 
         }
-        TulipItemData tulip = slot.Harvest();
-        if (tulip == null)
-            Debug.Log("Tulip is not bloomed yet!");
-        else
-            GMInventory.Instance.AddItemToInventory(tulip, 1);
+        if (userStatus.selectedInventorySlot?.itemData is ToolItemData &&
+           (userStatus.selectedInventorySlot.itemData.Name == "Trowel"))
+        {
+            TulipItemData tulip = slot.Harvest();
+            if (tulip == null)
+                Debug.Log("Tulip is not bloomed yet!");
+            else
+                GMInventory.Instance.AddItemToInventory(tulip, 1);
+        }
     }
 }
