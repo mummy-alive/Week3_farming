@@ -77,7 +77,7 @@ public class  GMFarm: MonoBehaviour
             return;
         }
         if (userStatus.selectedInventorySlot?.itemData is ToolItemData && 
-           userStatus.selectedInventorySlot.itemData.Name == "Watering can")
+           (userStatus.selectedInventorySlot.itemData.Name == "Watering can"))
         {   
             slot.WaterPlant();
         }

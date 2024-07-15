@@ -18,6 +18,7 @@ public class UIDialogueReply : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         _option1PanelAsBtn.onClick.AddListener(() => { reply = DialogueReply.Option1; });
         _option2PanelAsBtn.onClick.AddListener(() => { reply = DialogueReply.Option2; });
     }

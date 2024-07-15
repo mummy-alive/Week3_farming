@@ -14,8 +14,9 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        UIDialogue.OpenDialogueUI += 
-        ( () => {
+        Time.timeScale = 1;
+        DontDestroyOnLoad(gameObject);
+        UIDialogue.OpenDialogueUI += ( () => {
             _canOpenInventory = false; 
             _InventoryPanel.SetActive(false);} );
         UIDialogue.CloseDialogueUI += ( () => {
