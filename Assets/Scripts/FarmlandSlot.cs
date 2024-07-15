@@ -51,7 +51,7 @@ public class FarmlandSlot: MonoBehaviour
     private void FarmDateChange()
     {
         isAlreadyWatered = false;
-        if (daysProgress <= daysRequired)
+        if (isPlanted && (daysProgress <= daysRequired))
         {
             GrowProgress();
         }

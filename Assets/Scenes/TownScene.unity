@@ -677,7 +677,7 @@ MonoBehaviour:
   _askDialogue: {fileID: 11400000, guid: 1b8a30c978844cf419e3d0cb366af146, type: 2}
   _sceneName: BankScene
   _initialPosition: {x: -7, y: -3.5}
-  _charScale: 1
+  _charScale: 3
 --- !u!61 &1294415423
 BoxCollider2D:
   m_ObjectHideFlags: 0

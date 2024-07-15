@@ -4,13 +4,15 @@ import matplotlib.pyplot as plt
 
 # Parameters
 total_days = 80
+initial_days= 20
 crash_day = 72
 
 # Generate stock data
-np.random.seed(0)
-stock_prices = np.cumprod(1 + np.random.normal(0.05, 0.1, crash_day))
+np.random.seed(6)
+stock_prices = np.cumprod(1 + (np.random.normal(0.05, 0.1, initial_days)))
+stock_prices2 = np.cumprod(1 + (np.random.normal(0.05, 0.25, crash_day - initial_days)))
 crash = np.cumprod(1 - np.random.normal(0.5, 0.1, total_days - crash_day))
-stock_prices = np.concatenate((stock_prices, crash * stock_prices[-1]))
+stock_prices = np.concatenate((stock_prices, stock_prices2*stock_prices[-1], crash * stock_prices[-1]))
 
 print(stock_prices)
 # Create a DataFrame
