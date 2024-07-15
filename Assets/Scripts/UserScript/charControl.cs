@@ -13,16 +13,12 @@ public class charControl : MonoBehaviour
 
     private void Start()
     {
+        _rigidbody2d = GetComponent<Rigidbody2D>();
         UIDialogue.OpenDialogueUI += ( () => {_canMove = false; _rigidbody2d.velocity = new Vector2(0,0); } );
         UIDialogue.CloseDialogueUI += ( () => {_canMove = true;} );
 
     }
     Vector2 motionVector;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        _rigidbody2d = GetComponent<Rigidbody2D>();
-    }
     private void Update()
     {
         motionVector = new Vector2(
@@ -35,8 +31,40 @@ public class charControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (_canMove) _rigidbody2d.velocity = motionVector * _playerSpeed;
     }
+
+    public void MoveCharTo(Vector2 position)
+    {
+        _rigidbody2d.position = position;
+    }
+
+    public void ScaleCharBy(float multiple)
+    {
+        transform.localScale = new Vector2(multiple, multiple);
+    }
+
+    // Make GMGold a singleton object
+    private static charControl _instance;
+    public static charControl Instance
+    {
+        get {
+            if(!_instance)
+            {
+                _instance = FindObjectOfType(typeof(charControl)) as charControl;
+                if (_instance == null)
+                    Debug.Log("no Singleton goldManager");
+            }
+            return _instance;
+        }
+    }
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else if (_instance != this) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+    }
+
 }

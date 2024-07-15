@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
+  m_Name: AskToBank
+  m_EditorClassIdentifier: 
+  name: 
+  Sentence: "\uC740\uD589 \uAC74\uBB3C\uB85C \uB4E4\uC5B4\uAC00\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  HasReplyOption: 1
+  ReplyOption1: "\uC608"
+  ReplyOption2: "\uC544\uB2C8\uC624"

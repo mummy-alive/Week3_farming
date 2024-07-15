@@ -19,6 +19,11 @@ public class PathToTown : MonoBehaviour
     private async Task AskAndGotoTownAsync()
     {
         DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askMoveToTown);
-        if (reply == DialogueReply.Option1) SceneManager.LoadScene("TownScene");
+        if (reply == DialogueReply.Option1) 
+        {
+            GMSceneSwitcher.Instance.SwitchScene("TownScene");
+            charControl.Instance.MoveCharTo(new Vector2(-7,3));
+            
+        }
     }
 }
