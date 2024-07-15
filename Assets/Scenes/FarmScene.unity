@@ -1350,7 +1350,7 @@ MonoBehaviour:
   plantedPlantPrefab:
   - {fileID: 806421335278880001, guid: a72338f1b59443d428ecb71e79491907, type: 3}
   - {fileID: 8154053017768571382, guid: 1be26fa17fee3f3469017e43e7b18489, type: 3}
-  - {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
+  - {fileID: 1912788814835540444, guid: 45b5a01f33bd8294aa77a6ca2ec34315, type: 3}
   plantedPlantInstance: {fileID: 0}
 --- !u!61 &1062312787
 BoxCollider2D:
