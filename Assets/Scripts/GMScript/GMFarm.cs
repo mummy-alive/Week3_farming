@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
@@ -13,7 +15,8 @@ public class  GMFarm: MonoBehaviour
     
     [SerializeField]
     private List<FarmlandSlot> _farmlandSlotList = new List<FarmlandSlot>();
-
+    [SerializeField]
+    private Dialogue _askDialogue;
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -45,27 +48,38 @@ public class  GMFarm: MonoBehaviour
             return null;
         }  
     }
-    public void PlantOnFarmland(FarmlandSlot slot, Vector2 position)
+    public async void PlantOnFarmland(FarmlandSlot slot, Vector2 position)
     {
-        SeedItemData selectedSeed = SelectSeed();
-        UserStatus userStatus = UserStatus.Instance;
-        if (userStatus == null)
+        bool shouldPlant = await AskAndPlant();
+        if (shouldPlant)
         {
-            Debug.Log("No seed selected!");
-            return;
-        }
-        if (selectedSeed != null) //Decide which tulip & plant seed on slot
-        {
-            TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
-            slot.PlantSeed(selectedSeed, tulip, position);
-            FarmlandPlantDecideEvent?.Invoke(slot, tulip, selectedSeed, position);
-            GMInventory.Instance.DecreaseItemFromInventory(selectedSeed, 1);
-        }
-        else
-        {
-            Debug.Log("Not enough seeds left to plant or is not seed");
+            SeedItemData selectedSeed = SelectSeed();
+            UserStatus userStatus = UserStatus.Instance;
+            if (userStatus == null)
+            {
+                Debug.Log("No seed selected!");
+                return;
+            }
+            if (selectedSeed != null) //Decide which tulip & plant seed on slot
+            {
+
+                TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
+                slot.PlantSeed(selectedSeed, tulip, position);
+                FarmlandPlantDecideEvent?.Invoke(slot, tulip, selectedSeed, position);
+                GMInventory.Instance.DecreaseItemFromInventory(selectedSeed, 1);
+            }
+            else
+            {
+                Debug.Log("Not enough seeds left to plant or is not seed");
+            }
         }
 
+    }
+
+    private async Task<bool> AskAndPlant()
+    {
+        DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askDialogue);
+        return reply == DialogueReply.Option1;
     }
 
     public void WaterOnFarmland(FarmlandSlot slot)
@@ -87,7 +101,6 @@ public class  GMFarm: MonoBehaviour
             return;
         }
     }
-
 
     public void HarvestOnFarmland(FarmlandSlot slot)
     {

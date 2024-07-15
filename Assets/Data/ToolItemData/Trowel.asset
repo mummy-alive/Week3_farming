@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: WateringCan
-  m_EditorClassIdentifier: Assembly-CSharp::ToolItemData
-  Name: Watering can
-  InGameName: "\uBB3C\uBFCC\uB9AC\uAC1C"
-  Icon: {fileID: 21300000, guid: b5830bfde34f18e4ea9912d545bf1f62, type: 3}
+  m_Script: {fileID: 11500000, guid: 22e0fbd16bc82674395af8e50346c1c5, type: 3}
+  m_Name: Trowel
+  m_EditorClassIdentifier: 
+  Name: Trowel
+  InGameName: "\uBAA8\uC885\uC0BD"
+  Icon: {fileID: 21300000, guid: a099e297e67fe19488a544e3e46f5169, type: 3}

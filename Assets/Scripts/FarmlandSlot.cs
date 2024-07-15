@@ -8,11 +8,12 @@ using UnityEngine.EventSystems;
 
 public class FarmlandSlot: MonoBehaviour
 {    
-    public GameObject plantedPlantPrefab;
+    public GameObject[] plantedPlantPrefab = new GameObject[3];
     public GameObject plantedPlantInstance;
     private bool isPlanted = false;
     private TulipItemData currentTulip;
-    private int daysLeft;
+    private int daysProgress;
+    private int daysRequired;
     private bool isAlreadyWatered = false;
     private Vector2 midPoint;
     private bool playerIsOnSlot = false;
@@ -49,8 +50,20 @@ public class FarmlandSlot: MonoBehaviour
 
     private void FarmDateChange()
     {
-        isAlreadyWatered = false;  
+        isAlreadyWatered = false;
+        if (daysProgress <= daysRequired)
+        {
+            GrowProgress();
+        }
         // 식물 자라는 코드 추가
+    }
+
+    private void GrowProgress()
+    {
+        Destroy(plantedPlantInstance);
+        plantedPlantInstance = Instantiate(plantedPlantPrefab[daysProgress * 2 / daysRequired], midPoint, Quaternion.identity);
+        plantedPlantInstance.transform.SetParent(gameObject.transform);
+        // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -79,34 +92,33 @@ public class FarmlandSlot: MonoBehaviour
     {
         if(isPlanted) return;
         isPlanted = true;
-        daysLeft = seed.DaysToGrow;
+        daysRequired = seed.DaysToGrow;
+        daysProgress = 0;
         currentTulip = tulip;
-        plantedPlantInstance = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
+        plantedPlantInstance = Instantiate(plantedPlantPrefab[0], midPoint, Quaternion.identity);
         plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
     public void WaterPlant() 
     {
-        if (daysLeft <= 0)
+        if (daysProgress >= daysRequired)
+        {
+            Debug.Log("This plant is watered enough!");
             return;
+        }
         if (!isAlreadyWatered)
         {
             isAlreadyWatered = true;
-            daysLeft--;
+            daysProgress++;
             print("Watered successfully!");
-            GrowProgress();
         }
         else
             Debug.Log("This plant is already watered! Try tomorrow");         
     }
 
-    private void GrowProgress()
-    {
-        // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
-    }
     public TulipItemData Harvest()
     {
         //daysLeft = 0;     //for debugging harvest
-        if (daysLeft <= 0)
+        if (daysProgress >= daysRequired)
         {
             isPlanted = false;
             if (plantedPlantPrefab != null)
@@ -118,6 +130,7 @@ public class FarmlandSlot: MonoBehaviour
         else
         {
             Debug.Log("The flower's not bloomed yet!");
+            return null;
         }
         return currentTulip;
     }

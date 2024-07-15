@@ -683,7 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _InventoryPanel: {fileID: 192267185}
   _ReducedInventoryPanel: {fileID: 2055274711}
-  _example_item: {fileID: 11400000, guid: 415931ece742b1a468f09acc2f869a7b, type: 2}
+  _example_item: {fileID: 11400000, guid: dd4113e8a9c420f4abe3af208c1a9cf2, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,9 +1324,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1062312789}
+  - component: {fileID: 1062312786}
   - component: {fileID: 1062312788}
   - component: {fileID: 1062312787}
-  - component: {fileID: 1062312786}
   - component: {fileID: 1062312790}
   m_Layer: 0
   m_Name: FarmLandSlot
@@ -1347,7 +1347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fa538f19f3ed546a01880433d4b7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantedPlantPrefab: {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
+  plantedPlantPrefab:
+  - {fileID: 806421335278880001, guid: a72338f1b59443d428ecb71e79491907, type: 3}
+  - {fileID: 8154053017768571382, guid: 1be26fa17fee3f3469017e43e7b18489, type: 3}
+  - {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
   plantedPlantInstance: {fileID: 0}
 --- !u!61 &1062312787
 BoxCollider2D:
@@ -1434,7 +1437,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 931802432, guid: e4bc6e497743fc347954b6ac0bacfc46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1808,6 +1811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _DefaultItemList:
   - {fileID: 11400000, guid: 3715092d7fd62474a9a67e2548457670, type: 2}
+  - {fileID: 11400000, guid: 9e6a5a93e4f54ba469847dc9df65e4ce, type: 2}
 --- !u!114 &1274710324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _farmlandSlotList:
   - {fileID: 1062312786}
+  _askDialogue: {fileID: 11400000, guid: ae93a1c7ed355e74a8ec5003d02c3511, type: 2}
 --- !u!114 &1274710328
 MonoBehaviour:
   m_ObjectHideFlags: 0

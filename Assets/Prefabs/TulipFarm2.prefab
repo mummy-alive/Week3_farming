@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 281025048515804339}
   - component: {fileID: 1234921780165584985}
   m_Layer: 0
-  m_Name: Overworld_Tulip
+  m_Name: TulipFarm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
