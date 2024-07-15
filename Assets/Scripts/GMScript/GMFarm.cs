@@ -54,7 +54,7 @@ public class  GMFarm: MonoBehaviour
             Debug.Log("No seed selected!");
             return;
         }
-        if (selectedSeed != null)
+        if (selectedSeed != null) //Decide which tulip & plant seed on slot
         {
             TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
             slot.PlantSeed(selectedSeed, tulip, position);

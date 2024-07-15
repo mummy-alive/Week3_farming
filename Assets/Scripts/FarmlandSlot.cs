@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +13,7 @@ public class FarmlandSlot: MonoBehaviour
     private TulipItemData currentTulip;
     private int daysLeft;
     private Vector2 midPoint;
+    private bool playerIsOnSlot = false;
 
     Renderer rend;
 
@@ -21,17 +23,31 @@ public class FarmlandSlot: MonoBehaviour
         midPoint = transform.position;
         rend = GetComponent<Renderer>();
     }
-    /*private void OnMouseDown()
+
+    private void Update()
     {
-         Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-         GMFarm.Instance.PlantOnFarmland(this, clickPosition);
-    }*/
-    private void OnMouseDown()
-    {
-        Vector2 center = rend.bounds.center;
-        print("This is working");  /*ToDo: Cleanup */
-        GMFarm.Instance.PlantOnFarmland(this, center);
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        {
+            //Ask if player's really gonna plant em
+            GMFarm.Instance.PlantOnFarmland(this, midPoint);
+        }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsOnSlot = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsOnSlot = false;
+        }
+    }
+
     private void CheckIfMe(FarmlandSlot slot, TulipItemData tulip, SeedItemData seed, Vector2 position) 
     {
         if (slot != this)
