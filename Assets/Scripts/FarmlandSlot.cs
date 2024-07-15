@@ -82,9 +82,11 @@ public class FarmlandSlot: MonoBehaviour
         if (daysLeft <= 0)
         {
             isPlanted = false;
-            plantedPlantPrefab = GameObject.Find("Field");
-            Destroy(plantedPlantInstance);
-            plantedPlantInstance = null;
+            if (plantedPlantPrefab != null)
+            {
+                Destroy(plantedPlantInstance);
+                plantedPlantInstance = null;
+            }
         }
         return currentTulip;
     }

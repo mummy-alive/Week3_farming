@@ -1345,6 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantedPlantPrefab: {fileID: 5896823737603777470, guid: f78054d8f765b1d4886481b5fca7edbb, type: 3}
+  plantedPlantInstance: {fileID: 0}
 --- !u!61 &1062312787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1374,7 +1375,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1450,7 +1451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062312785}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.37, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5119,7 +5120,7 @@ SceneRoots:
   - {fileID: 1067818345}
   - {fileID: 1274710322}
   - {fileID: 135013117}
+  - {fileID: 1062312789}
   - {fileID: 1798286482}
   - {fileID: 94127942}
-  - {fileID: 1062312789}
   - {fileID: 204955818}
