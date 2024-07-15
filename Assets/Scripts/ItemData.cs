@@ -32,3 +32,7 @@ public class TulipItemData : ItemData   //flower 정보
     public float PriceMultiple;
     public Sprite FarmIcon;
 }
+
+
+[CreateAssetMenu(menuName = "Data/ToolItem", fileName = "ToolData")]
+public class ToolItemData : ItemData { }

@@ -54,11 +54,12 @@ public class  GMFarm: MonoBehaviour
             Debug.Log("No seed selected!");
             return;
         }
-        if (selectedSeed != null)
+        if (selectedSeed != null) //Decide which tulip & plant seed on slot
         {
             TulipItemData tulip = GMRandomBloom.RandBloom(selectedSeed);
             slot.PlantSeed(selectedSeed, tulip, position);
             FarmlandPlantDecideEvent?.Invoke(slot, tulip, selectedSeed, position);
+            GMInventory.Instance.DecreaseItemFromInventory(selectedSeed, 1);
         }
         else
         {
@@ -67,9 +68,39 @@ public class  GMFarm: MonoBehaviour
 
     }
 
-    public void Harvest(Vector2 slotPosition)
+    public void WaterOnFarmland(FarmlandSlot slot)
     {
+        UserStatus userStatus = UserStatus.Instance;
+        if(userStatus == null)
+        {
+            Debug.Log("No farm selected!");
+            return;
+        }
+        if (userStatus.selectedInventorySlot?.itemData is ToolItemData && 
+           userStatus.selectedInventorySlot.itemData.Name == "Watering can")
+        {   
+            slot.WaterPlant();
+        }
+        else
+        {
+            Debug.Log("You need water can to water the plant.");
+            return;
+        }
+    }
 
 
+    public void HarvestOnFarmland(FarmlandSlot slot)
+    {
+        UserStatus userStatus = UserStatus.Instance;
+        if (userStatus == null)
+        {
+            Debug.Log("Nothing selected");
+            return; 
+        }
+        TulipItemData tulip = slot.Harvest();
+        if (tulip == null)
+            Debug.Log("Tulip is not bloomed yet!");
+        else
+            GMInventory.Instance.AddItemToInventory(tulip, 1);
     }
 }

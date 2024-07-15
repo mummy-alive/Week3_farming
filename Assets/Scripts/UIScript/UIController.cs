@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject _InventoryPanel;
     [SerializeField] GameObject _ReducedInventoryPanel;
     [SerializeField] ItemData _example_item;
-    private bool _canOpenInventory;
+    private bool _canOpenInventory =true;
 
     private void Start()
     {
