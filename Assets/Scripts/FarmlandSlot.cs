@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class FarmlandSlot: MonoBehaviour
 {    
-    public GameObject plantedPlantPrefab ;
+    public GameObject plantedPlantPrefab;
+    public GameObject plantedPlantInstance;
     private bool isPlanted = false;
     private TulipItemData currentTulip;
     private int daysLeft;
     private Vector2 midPoint;
+    private bool playerIsOnSlot = false;
 
     Renderer rend;
 
@@ -21,17 +24,37 @@ public class FarmlandSlot: MonoBehaviour
         midPoint = transform.position;
         rend = GetComponent<Renderer>();
     }
-    /*private void OnMouseDown()
+
+    private void Update()
     {
-         Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-         GMFarm.Instance.PlantOnFarmland(this, clickPosition);
-    }*/
-    private void OnMouseDown()
-    {
-        Vector2 center = rend.bounds.center;
-        print("This is working");  /*ToDo: Cleanup */
-        GMFarm.Instance.PlantOnFarmland(this, center);
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        {
+            if (!isPlanted)
+            {
+                //Ask if player's really gonna plant em
+                GMFarm.Instance.PlantOnFarmland(this, midPoint);
+            }
+            else
+                GMFarm.Instance.HarvestOnFarmland(this);
+
+        }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsOnSlot = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerIsOnSlot = false;
+        }
+    }
+
     private void CheckIfMe(FarmlandSlot slot, TulipItemData tulip, SeedItemData seed, Vector2 position) 
     {
         if (slot != this)
@@ -45,19 +68,29 @@ public class FarmlandSlot: MonoBehaviour
         isPlanted = true;
         daysLeft = seed.DaysToGrow;
         currentTulip = tulip;
-        GameObject plant = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
-        plant.transform.SetParent(gameObject.transform);
+        plantedPlantInstance = Instantiate(plantedPlantPrefab, midPoint, Quaternion.identity);
+        plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
-    public void PlantGrow() 
+    public void WaterPlant() 
     {
+        // 오늘 물 줬는지 확인
+        daysLeft--;
         // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
     }
 
-    public void Harvest()
+    public TulipItemData Harvest()
     {
-        isPlanted = false;
-        plantedPlantPrefab = GameObject.Find("Field");
-        Destroy(plantedPlantPrefab);
+        daysLeft = 0;     //for debugging harvest
+        if (daysLeft <= 0)
+        {
+            isPlanted = false;
+            if (plantedPlantPrefab != null)
+            {
+                Destroy(plantedPlantInstance);
+                plantedPlantInstance = null;
+            }
+        }
+        return currentTulip;
     }
 
     private void OnDestroy()
