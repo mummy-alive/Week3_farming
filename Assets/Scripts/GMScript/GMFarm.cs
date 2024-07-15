@@ -68,9 +68,18 @@ public class  GMFarm: MonoBehaviour
 
     }
 
-    public void Harvest(Vector2 slotPosition)
+    public void HarvestOnFarmland(FarmlandSlot slot)
     {
-
-
+        UserStatus userStatus = UserStatus.Instance;
+        if (userStatus == null)
+        {
+            Debug.Log("Nothing selected");
+            return; 
+        }
+        TulipItemData tulip = slot.Harvest();
+        if (tulip == null)
+            Debug.Log("Tulip is not bloomed yet!");
+        else
+            GMInventory.Instance.AddItemToInventory(tulip, 1);
     }
 }

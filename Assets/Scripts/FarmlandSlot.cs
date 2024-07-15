@@ -29,7 +29,11 @@ public class FarmlandSlot: MonoBehaviour
         if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
         {
             //Ask if player's really gonna plant em
-            GMFarm.Instance.PlantOnFarmland(this, midPoint);
+            if (!isPlanted)
+                GMFarm.Instance.PlantOnFarmland(this, midPoint);
+            else
+                GMFarm.Instance.HarvestOnFarmland(this);
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -69,11 +73,17 @@ public class FarmlandSlot: MonoBehaviour
         // 시간 지날 때 마다 그에 해당하는 성장과정 Sprite 나옴.
     }
 
-    public void Harvest()
+    public TulipItemData Harvest()
     {
-        isPlanted = false;
-        plantedPlantPrefab = GameObject.Find("Field");
-        Destroy(plantedPlantPrefab);
+        if (daysLeft <= 0)
+        {
+            isPlanted = false;
+            plantedPlantPrefab = GameObject.Find("Field");
+            Destroy(plantedPlantPrefab);
+            return currentTulip;
+        }
+        else
+            return null;
     }
 
     private void OnDestroy()
