@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 8707c3648f5f00d41933b87b18b28e3e, type: 3}
   m_Name: NSeedData
-  m_EditorClassIdentifier: Assembly-CSharp::SeedItemData
+  m_EditorClassIdentifier: 
   Name: NSeed
   InGameName: "\uD3C9\uBC94\uD55C \uC528\uC557"
-  icon: {fileID: 0}
+  Icon: {fileID: 0}
   DaysToGrow: 3
   PriceMultiple: 0.5
   NProb: 80
