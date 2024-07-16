@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 using UnityEditor.PackageManager;
@@ -9,6 +11,8 @@ using UnityEngine.SocialPlatforms;
 
 public class BankManager : MonoBehaviour
 {
+    public UIDialogue dialogueManager;
+    public Dialogue numberDialogue;
     [SerializeField] private PriceSlot _priceSlotPrefab;
     [SerializeField]
     public static event Action<bool[]> FarmlandSlotStatus;
@@ -19,6 +23,9 @@ public class BankManager : MonoBehaviour
     private Dialogue[] _replyDialogue;
     [SerializeField]
     private Dialogue _declineDialogue;
+    [SerializeField]
+    private Dialogue _errorDialogue;
+
     private bool alreadyBorrow;
 
     private void Start()
@@ -87,8 +94,19 @@ public class BankManager : MonoBehaviour
         return;
     }
 
-    private void BorrowMoney()
+    private async void BorrowMoney()
     {
+        int loanWish = await dialogueManager.StartNumberInputDialogueAsync(numberDialogue);
+        if (loanWish > 0)
+        {
+            GMGold.Instance.EarnGold(loanWish);
+            GMGold.Instance.IncreaseDebt(loanWish);
+            DialogueReply declineDialog = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_declineDialogue);
+        }
+        else
+        {
+            DialogueReply errorDialog = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_errorDialogue);
+        }
 
     }
 

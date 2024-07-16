@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
   m_Name: BuySlotYes
   m_EditorClassIdentifier: 
-  name: 
-  Sentence: 
+  name: BuySlotYes
+  Sentence: "\uACE0\uB9D9\uB124. \uB545\uC740 \uBC14\uB85C \uC0AC\uB78C\uC744 \uBCF4\uB0B4
+    \uC5F4\uC5B4\uB450\uACA0\uB124. \uB610 \uC624\uAC8C\uB098."
   HasReplyOption: 0
   ReplyOption1: 
   ReplyOption2: 

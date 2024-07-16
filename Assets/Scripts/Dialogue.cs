@@ -8,6 +8,7 @@ public class Dialogue : ScriptableObject
     public string name;
     public string Sentence;
     public bool HasReplyOption;
+    public bool HasNumReplyOption;
     public string ReplyOption1 = "";
     public string ReplyOption2 = "";
 }

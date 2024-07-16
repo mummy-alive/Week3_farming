@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
-  m_Name: AskForNewSlot
+  m_Name: AskLoanAmount
   m_EditorClassIdentifier: 
-  name: AskForNewSlot
-  Sentence: "\uC5B4\uB514\uBCF4\uC790... \uC790\uB124\uAC00 \uC774 \uB545 \uC55E\uC73C\uB85C
-    \uBE4C\uB9B0 \uB3C8\uC740 3000\uD720\uB358\uC77C\uC138."
-  HasReplyOption: 1
-  ReplyOption1: "\uAD6C\uB9E4\uD55C\uB2E4"
-  ReplyOption2: "\uB3CC\uC544\uAC04\uB2E4."
+  name: AskLoanAmount
+  Sentence: "... \uD55C \uBC88 \uB4E4\uC5B4\uB098 \uBD04\uC138. \uC5BC\uB9C8\uB098
+    \uD544\uC694\uD55C\uAC90\uAC00?"
+  HasReplyOption: 0
+  ReplyOption1: 
+  ReplyOption2: 

@@ -301,6 +301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d262473e3000c2e4f8477816aaa86a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 0}
+  numberDialogue: {fileID: 11400000, guid: 8583498641cf41b4b8c603ee86c2b7d1, type: 2}
   _priceSlotPrefab: {fileID: 0}
   _askDialogue:
   - {fileID: 11400000, guid: 2464f15cfb2b1ea49b1d4628de090685, type: 2}
@@ -310,6 +312,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7a8ae2c4ea3f77940b38f71328819ee8, type: 2}
   - {fileID: 11400000, guid: 823719b025dea2943a72ae74f940778c, type: 2}
   _declineDialogue: {fileID: 11400000, guid: 15a13dc462e91ae45b20c1ded66af871, type: 2}
+  _errorDialogue: {fileID: 0}
 --- !u!61 &1081822659
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ public class UIDialogue : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Button _dialoguePanelAsButton;
     [SerializeField] private GameObject _replyPanel;
     [SerializeField] private UIDialogueReply _dialogueReply;
+    [SerializeField] private GameObject _numberInputPanel;
+
     public async Task<DialogueReply> StartDialogueAsync(Dialogue dialogue)
     {
         OpenDialogueUI?.Invoke();
@@ -39,6 +41,19 @@ public class UIDialogue : MonoBehaviour, IPointerClickHandler
             return DialogueReply.None;
         }
     }
+/*    public async Task<int> StartNumberInputDialogueAsync(Dialogue dialogue)
+    {
+        OpenDialogueUI?.Invoke();
+        _dialoguePanel.SetActive(true);
+        _dialogueText.text = dialogue.Sentence;
+
+        _replyPanel.SetActive(false);
+        _numberInputPanel.SetActive(true);
+        int numberInput = await _dialogueNumberInput.StartAndWaitForInput(dialogue);
+        EndDialogue();
+        return numberInput;
+    }
+*/
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
     {
         print("clicked dialog panel");
