@@ -30,6 +30,7 @@ public class UserStatus : MonoBehaviour
         {
             GMInventory.Instance.DecreaseItemFromInventory(_weirdTulip, 1);
             ScreenColorFilter.Instance.StartColorChange(5f);
+            CameraShaker.Instance.WiggleCamera();
         }
     }
 

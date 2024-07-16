@@ -9,7 +9,6 @@ using UnityEngine.SocialPlatforms;
 
 public class  GMFarm: MonoBehaviour
 {
-    //public SeedItemData TestSeed;
     public static GMFarm Instance { get; private set; } //public getter, private setter
     public static event Action<FarmlandSlot, TulipItemData, SeedItemData, Vector2> FarmlandPlantDecideEvent;
     
@@ -17,11 +16,19 @@ public class  GMFarm: MonoBehaviour
     private List<FarmlandSlot> _farmlandSlotList = new List<FarmlandSlot>();
     [SerializeField]
     private Dialogue _askDialogue;
+    private bool[] _farmlandSlotStatus = new bool[17];
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else if (Instance !=this)
             Destroy(gameObject);
+        GMBank.FarmlandSlotStatusChange += FarmEnabledCheck;
+
+    }
+
+    public void FarmEnabledCheck(int enabledSlot)
+    {
+        _farmlandSlotList[enabledSlot].EnableSlot();
     }
     public SeedItemData SelectSeed()
     {
@@ -117,7 +124,9 @@ public class  GMFarm: MonoBehaviour
             if (tulip == null)
                 Debug.Log("Tulip is not bloomed yet!");
             else
+            {
                 GMInventory.Instance.AddItemToInventory(tulip, 1);
+            }
         }
     }
 }

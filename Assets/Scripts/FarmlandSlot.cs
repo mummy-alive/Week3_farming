@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
@@ -10,8 +11,10 @@ public class FarmlandSlot: MonoBehaviour
 {    
     public GameObject[] plantedPlantPrefab = new GameObject[3];
     public GameObject plantedPlantInstance;
+
     private bool isPlanted = false;
     private TulipItemData currentTulip;
+    private bool isEnabled;
     private int daysProgress;
     private int daysRequired;
     private bool isAlreadyWatered = false;
@@ -19,18 +22,27 @@ public class FarmlandSlot: MonoBehaviour
     private bool playerIsOnSlot = false;
 
     Renderer rend;
-
+    private void FarmInit()
+    {
+        this.isPlanted = false;
+        this.currentTulip = null;
+        this.daysProgress = 0;
+        this.daysRequired = 0;
+        this.isAlreadyWatered= false;
+    }
     private void Start()
     {
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
         GMClock.DayChangeEvent += FarmDateChange;
         midPoint = transform.position;
         rend = GetComponent<Renderer>();
+
     }
 
     private void Update()
     {
-        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        if (!isEnabled) return;
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.E))
         {
             if (!isPlanted)
             {
@@ -41,13 +53,17 @@ public class FarmlandSlot: MonoBehaviour
                 GMFarm.Instance.HarvestOnFarmland(this);
 
         }
-        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.O))
+        if (playerIsOnSlot && Input.GetKeyDown(KeyCode.E))
         {
             if (!isAlreadyWatered)
                 GMFarm.Instance.WaterOnFarmland(this);
         }
     }
-
+    public void EnableSlot()
+    {
+        isEnabled = true;
+        rend = GetComponent<Renderer>();
+    }
     private void FarmDateChange()
     {
         isAlreadyWatered = false;
@@ -55,7 +71,6 @@ public class FarmlandSlot: MonoBehaviour
         {
             GrowProgress();
         }
-        // 식물 자라는 코드 추가
     }
 
     private void GrowProgress()
@@ -95,6 +110,14 @@ public class FarmlandSlot: MonoBehaviour
         daysRequired = seed.DaysToGrow;
         daysProgress = 0;
         currentTulip = tulip;
+        /*
+         * ToDo: 이 부분 나중에 TulipIcon이 아니라, TulipFarm 이라는 밭 아이콘 prefab으로 바꿔넣기.
+        GameObject iconObject = new GameObject("TulipIcon");
+        SpriteRenderer spriteRenderer = iconObject.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = currentTulip.Icon;
+
+        plantedPlantPrefab[2] = iconObject;*/
+
         plantedPlantInstance = Instantiate(plantedPlantPrefab[0], midPoint, Quaternion.identity);
         plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
@@ -116,11 +139,16 @@ public class FarmlandSlot: MonoBehaviour
     }
 
     public TulipItemData Harvest()
-    {
-        //daysLeft = 0;     //for debugging harvest
+    {       
         if (daysProgress >= daysRequired)
         {
-            isPlanted = false;
+            UserStatus userStatus = UserStatus.Instance;
+            if(GMInventory.Instance.AddItemToInventory(currentTulip,1) > 0 )
+            {
+                Debug.Log("Inventory is full!");
+                return null;
+            }
+            FarmInit();
             if (plantedPlantPrefab != null)
             {
                 Destroy(plantedPlantInstance);

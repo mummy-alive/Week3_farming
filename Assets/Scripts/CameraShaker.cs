@@ -10,14 +10,13 @@ public class CameraShaker : MonoBehaviour
 	public Transform camTransform;
 	
 	// How long the object should shake for.
-	public float wiggleDuration = 10f;
+	public float wiggleDuration = 5f;
 	
 	// Amplitude of the shake. A larger value shakes the camera harder.
 	public float shakeAmount = 0.5f;
 	public float decreaseFactor = 1.0f;
 	public float x_speed = 10f;
     public float y_speed = 3f;
-    [SerializeField] ScreenColorFilter _colorFilter;
 	Vector3 originalPos;
 	private float time;
     private float wiggleTimeLeft = 0f;
@@ -30,7 +29,6 @@ public class CameraShaker : MonoBehaviour
             camTransform = GetComponent<Transform>();
         }
         originalPos = camTransform.localPosition;
-        WiggleCamera();
     }
 
     void Update()
@@ -43,7 +41,7 @@ public class CameraShaker : MonoBehaviour
 
             camTransform.localPosition = originalPos + new Vector3(x, y, 0f);
 
-            wiggleTimeLeft -= Time.deltaTime * decreaseFactor;
+            wiggleTimeLeft -= Time.deltaTime;
         }
         else
         {
@@ -57,6 +55,26 @@ public class CameraShaker : MonoBehaviour
     {
         time = 0f;
         wiggleTimeLeft = wiggleDuration;
-        _colorFilter.StartFadeOut();
+    }
+
+    // Make CameraShaker a singleton object
+    private static CameraShaker _instance;
+    public static CameraShaker Instance
+    {
+        get {
+            if(!_instance)
+            {
+                _instance = FindObjectOfType(typeof(CameraShaker)) as CameraShaker;
+                if (_instance == null)
+                    Debug.Log("no Singleton goldManager");
+            }
+            return _instance;
+        }
+    }
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else if (_instance != this) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 }
