@@ -13,7 +13,12 @@ public class House : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askSleepDialog);
-            if (reply == DialogueReply.Option1) SleepUntilNextDay?.Invoke();
+            if (reply == DialogueReply.Option1) 
+            {
+                SleepUntilNextDay?.Invoke();
+                //ScreenColorFilter.Instance.StartFadeOut();
+                ScreenColorFilter.Instance.StartFadeIn();
+            }
         }
     }
 }

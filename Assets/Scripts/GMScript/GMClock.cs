@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 public class GMClock : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GMClock : MonoBehaviour
     [SerializeField] private int _currGameDay = 1;
     [SerializeField] private int _currGameHour = 6;
     [SerializeField] private int _currGameMinute = 0;
+    [SerializeField] private Dialogue _sleptOutsideDialogue;
     private int _prevGameMinute = 0;
     private float _realSecPassed = 0f;
     private void StartClock()
@@ -54,10 +56,18 @@ public class GMClock : MonoBehaviour
             if (_currGameHour >= 24)
             {
                 StartNextDay();
+                ScreenColorFilter.Instance.StartFadeIn();
+                SleptOutside();
             }
             if (_prevGameMinute != _currGameMinute)
                 ClockChangeEvent?.Invoke(_currGameDay, _currGameHour, _currGameMinute);
         }
+    }
+    private async Task SleptOutside()
+    {
+        await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_sleptOutsideDialogue);
+        int loseGold = (int) (GMGold.Instance.CurrGoldAmount*0.1);
+        GMGold.Instance.CheckAndUseGold(loseGold);
     }
     // Make GMClock a singleton object
     private static GMClock _instance;

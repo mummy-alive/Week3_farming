@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
+  m_Name: AskWeirdTulip
+  m_EditorClassIdentifier: 
+  name: 
+  Sentence: "\uD2B9\uC774\uD55C \uB0C4\uC0C8\uAC00 \uB09C\uB2E4. \uAC00\uAE4C\uC774\uC11C
+    \uB0C4\uC0C8\uB97C \uB9E1\uC544\uBCFC\uAE4C?"
+  HasReplyOption: 1
+  ReplyOption1: "\uC608"
+  ReplyOption2: "\uC544\uB2C8\uC624"

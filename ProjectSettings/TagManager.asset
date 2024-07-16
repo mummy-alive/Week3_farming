@@ -50,3 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 440302047
     locked: 0
+  - name: ColorFilter
+    uniqueID: 556061711
+    locked: 0

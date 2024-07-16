@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -25,9 +26,14 @@ public class ChangeScene : MonoBehaviour
         DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askDialogue);
         if (reply == DialogueReply.Option1) 
         {
+            print("call fade out");
+            ScreenColorFilter.Instance.StartFadeOut();
+            
             GMSceneSwitcher.Instance.SwitchScene(_sceneName);
             charControl.Instance.MoveCharTo(_initialPosition);
             charControl.Instance.ScaleCharBy(_charScale);
+            print("call fade in");
+            ScreenColorFilter.Instance.StartFadeIn();
         }
     }
 }
