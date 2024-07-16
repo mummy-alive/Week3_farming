@@ -37,8 +37,6 @@ public class GMClock : MonoBehaviour
     }
     private void Start()
     {
-        UIController.OpenInventory += StopClock;
-        UIController.CloseInventory += StartClock;
         UIDialogue.OpenDialogueUI += StopClock;
         UIDialogue.CloseDialogueUI += StartClock;
         House.SleepUntilNextDay += StartNextDay;

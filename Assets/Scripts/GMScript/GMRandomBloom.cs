@@ -13,27 +13,27 @@ public class GMRandomBloom : MonoBehaviour
 
         if (randNum < seed.NProb)
         {
-            int randIndex  = Random.Range(0, GMDataHolder.Instance.NTulipItemDatas.Count-1);
+            int randIndex  = Random.Range(0, GMDataHolder.Instance.NTulipItemDatas.Count);
             return GMDataHolder.Instance.NTulipItemDatas[randIndex];
         }
         else if (randNum < seed.RProb + seed.NProb)
         {
-            int randIndex  = Random.Range(0, GMDataHolder.Instance.RTulipItemDatas.Count-1);
+            int randIndex  = Random.Range(0, GMDataHolder.Instance.RTulipItemDatas.Count);
             return GMDataHolder.Instance.RTulipItemDatas[randIndex];
         } 
         else if (randNum < seed.SRProb + seed.RProb + seed.NProb)
         {
-            int randIndex  = Random.Range(0, GMDataHolder.Instance.SRTulipItemDatas.Count-1);
+            int randIndex  = Random.Range(0, GMDataHolder.Instance.SRTulipItemDatas.Count);
             return GMDataHolder.Instance.SRTulipItemDatas[randIndex];
         } 
         else if (randNum < seed.EXProb + seed.SRProb + seed.RProb + seed.NProb )
         {
-            int randIndex  = Random.Range(0, GMDataHolder.Instance.EXTulipItemDatas.Count-1);
+            int randIndex  = Random.Range(0, GMDataHolder.Instance.EXTulipItemDatas.Count);
             return GMDataHolder.Instance.EXTulipItemDatas[randIndex];
         } 
         else 
         {
-            int randIndex  = Random.Range(0, GMDataHolder.Instance.WeirdTulipItemDatas.Count-1);
+            int randIndex  = Random.Range(0, GMDataHolder.Instance.WeirdTulipItemDatas.Count);
             return GMDataHolder.Instance.WeirdTulipItemDatas[randIndex];
         }
     }

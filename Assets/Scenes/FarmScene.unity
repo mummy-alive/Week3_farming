@@ -742,7 +742,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ec453df4924504cb578c9be3d5f1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InventoryPanel: {fileID: 0}
   _ReducedInventoryPanel: {fileID: 2055274711}
   _example_item: {fileID: 11400000, guid: bf1e2ac1e608a744d939e0396fe86e7f, type: 2}
 --- !u!1 &492183370
@@ -2196,6 +2195,7 @@ GameObject:
   - component: {fileID: 1274710327}
   - component: {fileID: 1274710328}
   - component: {fileID: 1274710329}
+  - component: {fileID: 1274710330}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2353,6 +2353,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FarmlandSlotStatus: 00000000000000000000000000000000
+--- !u!114 &1274710330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274710319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537cea789223414c978b0347dac9ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startDialogues:
+  - {fileID: 11400000, guid: a2b2efdf8e09b1d4bbe663fa8b2c65b9, type: 2}
+  - {fileID: 11400000, guid: 02aec10aa8eeb46418dc03ca2073d3e6, type: 2}
 --- !u!1 &1290423379
 GameObject:
   m_ObjectHideFlags: 0

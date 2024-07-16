@@ -17,10 +17,13 @@ public class UserStatus : MonoBehaviour
 
     private void SetSelectedInventorySlot(UIInventorySlot selectedSlot)
     {
-        selectedInventorySlot = selectedSlot.currInventorySlot;
-        if (selectedSlot.currInventorySlot.itemData == _weirdTulip)
+        if (selectedSlot != null)
         {
-            AskEatWeird();
+            selectedInventorySlot = selectedSlot.currInventorySlot;
+            if (selectedSlot.currInventorySlot?.itemData == _weirdTulip)
+            {
+                AskEatWeird();
+            }
         }
     }
     private async Task AskEatWeird()

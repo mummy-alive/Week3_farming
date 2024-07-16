@@ -14,9 +14,10 @@ public class GMInventory : MonoBehaviour {
 
     [SerializeField] private List<ItemData> _DefaultItemList;
 
+
+
     private void Start()
     {
-        print("inside GMInventory Start()");
         foreach (ItemData item in _DefaultItemList)
             GMInventory.Instance.AddItemToInventory(item, 1);
         InventoryUpdateEvent?.Invoke(_itemSlotList);
@@ -49,8 +50,8 @@ public class GMInventory : MonoBehaviour {
 
     public void RemoveItemFromInventory(int index)
     {
-        InventoryUpdateEvent?.Invoke(_itemSlotList);
         _itemSlotList.RemoveAt(index);
+        InventoryUpdateEvent?.Invoke(_itemSlotList);
     }
 
     public void DecreaseItemFromInventory(ItemData itemData, int amount)
@@ -144,8 +145,10 @@ public class GMInventory : MonoBehaviour {
     }
     private void Awake()
     {
+
         if (_instance == null) _instance = this;
         else if (_instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+        
     }
 }

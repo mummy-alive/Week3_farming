@@ -13,16 +13,20 @@ public class UIReducedInventory : MonoBehaviour
     {
         InitializeInventoryUI();
         GMInventory.InventoryUpdateEvent += UIInventoryUpdate;
+        UIInventoryUpdate(GMInventory.Instance._itemSlotList);
     }
     private void UIInventoryUpdate(List<InventorySlot> inventorySlots)
     {
-        foreach (UIInventorySlot uiSlot in _UIInventorySlotList)
+        for (int i = 0; i < _UIInventorySlotList.Count; i++)
         {
-            uiSlot.Clean();
-        }
-        for (int i = 0; i < GMInventory.Instance._itemSlotList.Count; i++)
-        {
-            _UIInventorySlotList[i].SetItem(inventorySlots[i]);
+            if (i < inventorySlots.Count)
+            {
+                _UIInventorySlotList[i].SetItem(inventorySlots[i]);
+            }
+            else
+            {
+                _UIInventorySlotList[i].Clean();
+            }
         }
     }
     public void InitializeInventoryUI()

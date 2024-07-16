@@ -14,7 +14,7 @@ public class UIInventorySlot : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Image _highlight;
     public InventorySlot currInventorySlot{get; private set;}
 
-    private void Start()
+    private void Awake()
     {
         _image.sprite = null;
         _image.gameObject.SetActive(false); 
@@ -43,10 +43,16 @@ public class UIInventorySlot : MonoBehaviour, IPointerClickHandler
 
     public void Clean()
     {
-        print("InventorySlot cleared");
+        _highlight.enabled = false;
         _image.sprite = null;
         _image.gameObject.SetActive(false); 
         _amountText.gameObject.SetActive(false);
+        if (currInventorySlot != null)
+        {
+            currInventorySlot = null;
+            InventorySlotSelect?.Invoke(this);
+        }
+        
     }
 
     

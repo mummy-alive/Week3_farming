@@ -16,7 +16,7 @@ public class WeirdMerchant : MonoBehaviour
         {
             if (GMInventory.Instance.CheckItemAmount(_rainbowTulip) > 0)
                 { AskSellRainbow(); }
-            else if (Random.Range(0, 100) > 2 ) 
+            else if (Random.Range(0, 100) < 10 ) 
                 { AskWeirdTulip(); }
             else 
                 { Reject(); }
