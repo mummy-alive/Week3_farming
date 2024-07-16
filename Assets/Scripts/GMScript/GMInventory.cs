@@ -10,12 +10,13 @@ using UnityEngine;
 public class GMInventory : MonoBehaviour {
 
     public static event Action<List<InventorySlot>> InventoryUpdateEvent;
-    [SerializeField] private List<InventorySlot> _itemSlotList = new List<InventorySlot>();
+    [SerializeField] public List<InventorySlot> _itemSlotList = new List<InventorySlot>();
 
     [SerializeField] private List<ItemData> _DefaultItemList;
 
     private void Start()
     {
+        print("inside GMInventory Start()");
         foreach (ItemData item in _DefaultItemList)
             GMInventory.Instance.AddItemToInventory(item, 1);
         InventoryUpdateEvent?.Invoke(_itemSlotList);
@@ -67,6 +68,7 @@ public class GMInventory : MonoBehaviour {
         {
             throw new ArgumentException("Parameter cannot be bigger than item amount", nameof(itemData));
         }
+        _itemSlotList.RemoveAll(slot => slot.amount < 1);
         InventoryUpdateEvent?.Invoke(_itemSlotList);
     }
 

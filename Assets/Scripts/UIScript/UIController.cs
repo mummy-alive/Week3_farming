@@ -26,18 +26,6 @@ public class UIController : MonoBehaviour
     }
     private void Update()
     {
-        if (_canOpenInventory && Input.GetKeyDown(KeyCode.I))
-        {
-            if (_InventoryPanel.activeInHierarchy){
-                _InventoryPanel.SetActive(false);
-                _ReducedInventoryPanel.SetActive(true);
-                CloseInventory?.Invoke();
-            } else {
-                _InventoryPanel.SetActive(true);
-                _ReducedInventoryPanel.SetActive(false);
-                OpenInventory?.Invoke();
-            }
-        }
         if (Input.GetKey(KeyCode.Q))
         {
             GMInventory.Instance.AddItemToInventory(_example_item, 1);

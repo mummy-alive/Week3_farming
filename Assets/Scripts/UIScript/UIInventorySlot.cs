@@ -16,6 +16,9 @@ public class UIInventorySlot : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
+        _image.sprite = null;
+        _image.gameObject.SetActive(false); 
+        _amountText.gameObject.SetActive(false);
         UIInventorySlot.InventorySlotSelect += SlotIsSelected;
     }
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
@@ -31,12 +34,16 @@ public class UIInventorySlot : MonoBehaviour, IPointerClickHandler
 
     public void SetItem(InventorySlot inventorySlot)
     {
+        _image.gameObject.SetActive(true);
+        _amountText.gameObject.SetActive(true);
         currInventorySlot = inventorySlot;
         _amountText.text = inventorySlot.amount.ToString();
         _image.sprite = inventorySlot.itemData.Icon;
     }
+
     public void Clean()
     {
+        print("InventorySlot cleared");
         _image.sprite = null;
         _image.gameObject.SetActive(false); 
         _amountText.gameObject.SetActive(false);

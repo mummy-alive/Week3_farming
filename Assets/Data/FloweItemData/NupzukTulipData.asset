@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TulipItemData
   Name: Nupzuk
   InGameName: "\uB119\uC8FD \uD2A4\uB9BD"
-  icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 975868fda250bbf469e8e40af1b59ead, type: 3}
   PriceMultiple: 20
+  FarmIcon: {fileID: 21300000, guid: 975868fda250bbf469e8e40af1b59ead, type: 3}

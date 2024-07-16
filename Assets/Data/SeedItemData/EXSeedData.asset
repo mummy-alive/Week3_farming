@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8707c3648f5f00d41933b87b18b28e3e, type: 3}
   m_Name: EXSeedData
   m_EditorClassIdentifier: 
-  Name: 
-  InGameName: 
-  Icon: {fileID: 0}
+  Name: EXSeed
+  InGameName: " \uC774\uAD6D\uC758 \uC528\uC557"
+  Icon: {fileID: 21300000, guid: fd7e856b52bb25743937937e532779c4, type: 3}
   DaysToGrow: 5
   PriceMultiple: 0
   NProb: 0

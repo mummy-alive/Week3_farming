@@ -7,7 +7,7 @@ public class UIReducedInventory : MonoBehaviour
 {
     [SerializeField] private UIInventorySlot _slotPrefab;
     [SerializeField] private RectTransform _inventoryPanel;
-    private List<UIInventorySlot> _UIInventorySlotList = new List<UIInventorySlot>();
+    public List<UIInventorySlot> _UIInventorySlotList = new List<UIInventorySlot>();
 
     private void Start()
     {
@@ -16,14 +16,18 @@ public class UIReducedInventory : MonoBehaviour
     }
     private void UIInventoryUpdate(List<InventorySlot> inventorySlots)
     {
-        for (int i = 0; i < Math.Min(MyConst.INVENTORY_COLUMNS, inventorySlots.Count); i++)
+        foreach (UIInventorySlot uiSlot in _UIInventorySlotList)
+        {
+            uiSlot.Clean();
+        }
+        for (int i = 0; i < GMInventory.Instance._itemSlotList.Count; i++)
         {
             _UIInventorySlotList[i].SetItem(inventorySlots[i]);
-        } 
+        }
     }
     public void InitializeInventoryUI()
     {
-        for (int i = 0; i < MyConst.INVENTORY_COLUMNS; i++)
+        for (int i = 0; i < MyConst.INVENTORY_SIZE; i++)
         {
             UIInventorySlot inventorySlot =
                 Instantiate(_slotPrefab, Vector3.zero, Quaternion.identity);
