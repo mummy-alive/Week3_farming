@@ -4766,6 +4766,7 @@ MonoBehaviour:
   _dialoguePanelAsButton: {fileID: 1587986672}
   _replyPanel: {fileID: 1136184365}
   _dialogueReply: {fileID: 1136184367}
+  _numberInputPanel: {fileID: 0}
 --- !u!222 &1464419501
 CanvasRenderer:
   m_ObjectHideFlags: 0

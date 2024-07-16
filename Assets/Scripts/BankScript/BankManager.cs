@@ -1,16 +1,18 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-
+using TMPro;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.UI;
 
 public class BankManager : MonoBehaviour
 {
+    public static event Action<int> SubmitLoanWish;
     public UIDialogue dialogueManager;
     public Dialogue numberDialogue;
     [SerializeField] private PriceSlot _priceSlotPrefab;
@@ -25,12 +27,17 @@ public class BankManager : MonoBehaviour
     private Dialogue _declineDialogue;
     [SerializeField]
     private Dialogue _errorDialogue;
+    [SerializeField]
+    private Dialogue _loanGaveDialogue;
+    [SerializeField]
+    private TMP_InputField loanTMPInputField;
 
     private bool alreadyBorrow;
 
     private void Start()
     {
         GMClock.DayChangeEvent += LoanInit;
+        BankManager.SubmitLoanWish += AddLoan;
         //New slot also asks for subscription on farmlandstatus.
         
     }
@@ -52,10 +59,8 @@ public class BankManager : MonoBehaviour
         DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askDialogue[0]);
         if (reply == DialogueReply.Option1)
             AskForNewSlot();
-        //print("Yup");
         else
             AskForLoan();
-        //print("Nope");
     }
 
     private async Task AskForNewSlot()
@@ -85,7 +90,10 @@ public class BankManager : MonoBehaviour
         DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askDialogue[2]);
         if (reply == DialogueReply.Option1)
         {
-            BorrowMoney();
+            DialogueReply reply1 = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_replyDialogue[2]);
+            loanTMPInputField.gameObject.SetActive(true);
+            loanTMPInputField.text = "";
+            loanTMPInputField.onEndEdit.AddListener(OnLoanInputSubmit);
         }
         else
         {
@@ -93,21 +101,31 @@ public class BankManager : MonoBehaviour
         }
         return;
     }
-
-    private async void BorrowMoney()
+    private void OnLoanInputSubmit(string input)
     {
-        int loanWish = await dialogueManager.StartNumberInputDialogueAsync(numberDialogue);
+        if (int.TryParse(input, out int loanWish))
+        {
+            SubmitLoanWish?.Invoke(loanWish);
+        }
+        else
+        {
+            SubmitLoanWish?.Invoke(0); // 잘못된 입력 처리
+        }
+        loanTMPInputField.gameObject.SetActive(false);
+        //loanInputField.gameObject.SetActive(false); // 입력 후 InputField 비활성화
+    }
+
+    private async void AddLoan(int loanWish)
+    {
         if (loanWish > 0)
         {
             GMGold.Instance.EarnGold(loanWish);
             GMGold.Instance.IncreaseDebt(loanWish);
-            DialogueReply declineDialog = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_declineDialogue);
+            DialogueReply declineDialog = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_loanGaveDialogue);
         }
         else
         {
             DialogueReply errorDialog = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_errorDialogue);
         }
-
     }
-
 }
