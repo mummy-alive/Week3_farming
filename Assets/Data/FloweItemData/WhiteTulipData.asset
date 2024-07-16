@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TulipItemData
   Name: WhiteTulip
   InGameName: "\uD558\uC580 \uD2A4\uB9BD"
-  icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 74515f2276ce77748a71fbec29c23023, type: 3}
   PriceMultiple: 5
+  FarmIcon: {fileID: 21300000, guid: 74515f2276ce77748a71fbec29c23023, type: 3}

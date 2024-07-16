@@ -6,17 +6,11 @@ public class UIInventoryPanel : MonoBehaviour
 {
     [SerializeField] private UIInventorySlot _slotPrefab;
     [SerializeField] private RectTransform _inventoryPanel;
-    [SerializeField] private Button _sortButton;
-    private List<UIInventorySlot> _UIInventorySlotList = new List<UIInventorySlot>();
+    public List<UIInventorySlot> UIInventorySlotList = new List<UIInventorySlot>();
     private void Start()
     {
         InitializeInventoryUI();
         GMInventory.InventoryUpdateEvent += UIInventoryUpdate;
-        _sortButton.onClick.AddListener(sortInventory);
-    }
-    private void sortInventory()
-    {
-        GMInventory.Instance.sortInventory();
     }
     public void InitializeInventoryUI()
     {
@@ -25,14 +19,18 @@ public class UIInventoryPanel : MonoBehaviour
             UIInventorySlot inventorySlot =
                 Instantiate(_slotPrefab, Vector3.zero, Quaternion.identity);
             inventorySlot.transform.SetParent(_inventoryPanel);
-            _UIInventorySlotList.Add(inventorySlot);
+            UIInventorySlotList.Add(inventorySlot);
         }
     }
     private void UIInventoryUpdate(List<InventorySlot> inventorySlots)
     {
-        for (int i = 0; i < inventorySlots.Count; i++)
+        foreach (UIInventorySlot uiSlot in UIInventorySlotList)
         {
-            _UIInventorySlotList[i].SetItem(inventorySlots[i]);
+            uiSlot.Clean();
+        }
+        for (int i = 0; i < GMInventory.Instance._itemSlotList.Count; i++)
+        {
+            UIInventorySlotList[i].SetItem(inventorySlots[i]);
         }
     }
 }

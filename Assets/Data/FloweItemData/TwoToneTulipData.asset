@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TulipItemData
   Name: TwoToneTulip
   InGameName: "\uD22C\uD1A4 \uD2A4\uB9BD"
-  icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: ea21950b2ac00604c8aa9c4d82039376, type: 3}
   PriceMultiple: 5
+  FarmIcon: {fileID: 21300000, guid: ea21950b2ac00604c8aa9c4d82039376, type: 3}

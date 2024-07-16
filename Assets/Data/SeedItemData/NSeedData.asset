@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: NSeed
   InGameName: "\uD3C9\uBC94\uD55C \uC528\uC557"
-  Icon: {fileID: 21300000, guid: 804e7bea1b9412642b4cc4cbe06f3b97, type: 3}
+  Icon: {fileID: 21300000, guid: 3a8d7408000ca854abc4bc5f528b52fa, type: 3}
   DaysToGrow: 3
   PriceMultiple: 0.5
   NProb: 80

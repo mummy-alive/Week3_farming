@@ -32,6 +32,7 @@ public class GMClock : MonoBehaviour
         _currGameMinute = 0;
         _currGameDay += 1;
         _realSecPassed = 0f;
+        ClockChangeEvent?.Invoke(_currGameDay, _currGameHour, _currGameMinute);
         DayChangeEvent?.Invoke();
     }
     private void Start()
