@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Unity.VisualScripting;
 
 public class MyConst {
     public static int PILE_SIZE = 64;
@@ -10,6 +11,12 @@ public class MyConst {
     public static int TOTAL_GAME_DAYS = 80;
     public static int MAX_HOURS_AWAKE = 18;
     public static int REAL_SECOND_PER_GAME_HOUR = 2;
+    public static int FARM_SLOT_NUM = 16;
+    public static int[] FARM_SLOT_PRICE = { 0, 0, 0, 0,
+        3000, 4500, 6750, 10125,
+        15187, 22780, 34170, 51255,
+        76882, 115323, 172984, 259476 };
+
 
     private static List<double> _priceList = new List<double>
     {
