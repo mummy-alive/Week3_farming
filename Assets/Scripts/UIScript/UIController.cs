@@ -14,13 +14,13 @@ public class UIController : MonoBehaviour
         Time.timeScale = 1;
         DontDestroyOnLoad(gameObject);
     }
-    private void Update()
+/*    private void Update()
     {
         if (Input.GetKey(KeyCode.Q))
         {
             GMInventory.Instance.AddItemToInventory(_example_item, 1);
         }
-    }
+    }*/
 
 }
 

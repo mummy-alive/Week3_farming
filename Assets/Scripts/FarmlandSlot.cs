@@ -22,6 +22,8 @@ public class FarmlandSlot : MonoBehaviour
     private bool isAlreadyWatered = false;
     private Vector2 midPoint;
     private bool playerIsOnSlot = false;
+    [SerializeField]
+    private GameObject wetGroundEffect;
 
     Renderer rend;
     private void FarmInit()
@@ -31,6 +33,7 @@ public class FarmlandSlot : MonoBehaviour
         this.daysProgress = 0;
         this.daysRequired = 0;
         this.isAlreadyWatered = false;
+        wetGroundEffect.SetActive(false);
     }
     private void Start()
     {
@@ -43,7 +46,7 @@ public class FarmlandSlot : MonoBehaviour
             forSaleSignInstance.transform.SetParent(gameObject.transform);
         }
         rend = GetComponent<Renderer>();
-
+        wetGroundEffect.SetActive(false);
     }
 
     private void Update()
@@ -80,6 +83,7 @@ public class FarmlandSlot : MonoBehaviour
     private void FarmDateChange()
     {
         isAlreadyWatered = false;
+        wetGroundEffect.SetActive(false);
         if (isPlanted && (daysProgress <= daysRequired))
         {
             GrowProgress();
@@ -141,6 +145,7 @@ public class FarmlandSlot : MonoBehaviour
         {
             isAlreadyWatered = true;
             daysProgress++;
+            wetGroundEffect.SetActive(true);
             print("Watered successfully!");
         }
         else

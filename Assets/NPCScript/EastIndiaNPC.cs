@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 enum BoatType { BIGBOAT, SMALLBOAT, NONE }

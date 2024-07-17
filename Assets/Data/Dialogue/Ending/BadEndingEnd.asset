@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
+  m_Name: BadEndingEnd
+  m_EditorClassIdentifier: 
+  name: BadEndingEnd
+  Sentence: "\uACB0\uAD6D \uBE5A\uC744 \uAC1A\uC9C0 \uBABB\uD55C \uB098\uB294 \uC740\uD589\uC758
+    \uC0AC\uC8FC\uB85C \uC554\uD751\uAC00\uC5D0 \uB0A9\uCE58\uB2F9\uD574 \uB178\uC608\uAC00
+    \uB418\uC5C8\uB2E4... \uD558\uC9C0\uB9CC \uAC71\uC815 \uB9C8\uB77C. \uC55E\uC73C\uB85C
+    79\uB144\uB9CC \uB354 \uC77C\uD558\uBA74 \uBE5A\uC744 \uD0D5\uAC10\uBC1B\uC744
+    \uC218 \uC788\uC73C\uB2C8\uAE4C."
+  HasReplyOption: 0
+  ReplyOption1: 
+  ReplyOption2: 
