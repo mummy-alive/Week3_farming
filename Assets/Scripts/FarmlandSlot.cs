@@ -11,6 +11,8 @@ public class FarmlandSlot: MonoBehaviour
 {    
     public GameObject[] plantedPlantPrefab = new GameObject[3];
     public GameObject plantedPlantInstance;
+    public GameObject forSaleSignPrefab;
+    public GameObject forSaleSignInstance; 
 
     private bool isPlanted = false;
     private TulipItemData currentTulip;
@@ -35,6 +37,11 @@ public class FarmlandSlot: MonoBehaviour
         GMFarm.FarmlandPlantDecideEvent += CheckIfMe;
         GMClock.DayChangeEvent += FarmDateChange;
         midPoint = transform.position;
+        if (forSaleSignPrefab != null)
+        {
+            forSaleSignInstance = Instantiate(forSaleSignPrefab, midPoint, Quaternion.identity);
+            forSaleSignInstance.transform.SetParent(gameObject.transform);
+        }
         rend = GetComponent<Renderer>();
 
     }
@@ -62,6 +69,12 @@ public class FarmlandSlot: MonoBehaviour
     public void EnableSlot()
     {
         isEnabled = true;
+        if (forSaleSignPrefab != null)
+        {
+            Destroy(forSaleSignInstance); // Hide instead of destroy
+            forSaleSignInstance = null;
+            forSaleSignPrefab = null;
+        }
         rend = GetComponent<Renderer>();
     }
     private void FarmDateChange()
@@ -110,13 +123,8 @@ public class FarmlandSlot: MonoBehaviour
         daysRequired = seed.DaysToGrow;
         daysProgress = 0;
         currentTulip = tulip;
-        /*
-         * ToDo: 이 부분 나중에 TulipIcon이 아니라, TulipFarm 이라는 밭 아이콘 prefab으로 바꿔넣기.
-        GameObject iconObject = new GameObject("TulipIcon");
-        SpriteRenderer spriteRenderer = iconObject.AddComponent<SpriteRenderer>();
-        spriteRenderer.sprite = currentTulip.Icon;
 
-        plantedPlantPrefab[2] = iconObject;*/
+        plantedPlantPrefab[2] = tulip.FarmPrefab;
 
         plantedPlantInstance = Instantiate(plantedPlantPrefab[0], midPoint, Quaternion.identity);
         plantedPlantInstance.transform.SetParent(gameObject.transform);

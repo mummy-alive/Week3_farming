@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GMGameTutorial : MonoBehaviour
 {
-    [SerializeField] Dialogue _startDialogue;
+    [SerializeField] Dialogue[] _startDialogueList;
     void Start()
     {
         ShowDialogue();
@@ -13,6 +13,9 @@ public class GMGameTutorial : MonoBehaviour
 
     private async Task ShowDialogue()
     {
-        await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_startDialogue);
+        foreach (var dialogue in _startDialogueList)
+        {
+            await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(dialogue);
+        }
     }
 }

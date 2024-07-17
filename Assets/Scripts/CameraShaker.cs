@@ -13,13 +13,15 @@ public class CameraShaker : MonoBehaviour
 	public float wiggleDuration = 5f;
 	
 	// Amplitude of the shake. A larger value shakes the camera harder.
-	public float shakeAmount = 0.5f;
+	public float wiggleAmount = 0.5f;
 	public float decreaseFactor = 1.0f;
 	public float x_speed = 10f;
     public float y_speed = 3f;
 	Vector3 originalPos;
 	private float time;
     private float wiggleTimeLeft = 0f;
+    private float shakeTimeLeft = 0f; 
+    public float shakeAmount = 0.5f;
 
 
     void Start()
@@ -29,6 +31,8 @@ public class CameraShaker : MonoBehaviour
             camTransform = GetComponent<Transform>();
         }
         originalPos = camTransform.localPosition;
+        ShakeCamera();
+        ScreenColorFilter.Instance.StartFadeOut();
     }
 
     void Update()
@@ -36,16 +40,23 @@ public class CameraShaker : MonoBehaviour
         if (wiggleTimeLeft > 0)
         {
             time += Time.deltaTime;
-            float x = Mathf.Sin(time * x_speed) * shakeAmount; // Adjust the multiplier for speed
-            float y = Mathf.Sin(time * y_speed) * shakeAmount; // Adjust the multiplier for speed
+            float x = Mathf.Sin(time * x_speed) * wiggleAmount; // Adjust the multiplier for speed
+            float y = Mathf.Sin(time * y_speed) * wiggleAmount; // Adjust the multiplier for speed
 
             camTransform.localPosition = originalPos + new Vector3(x, y, 0f);
 
             wiggleTimeLeft -= Time.deltaTime;
         }
+        else if (shakeTimeLeft > 0)
+        {
+            camTransform.localPosition = originalPos + UnityEngine.Random.insideUnitSphere * shakeAmount;
+			
+			shakeTimeLeft -= Time.deltaTime * decreaseFactor;
+        }
         else
         {
             wiggleTimeLeft = 0f;
+            shakeTimeLeft = 0f;
             camTransform.localPosition = originalPos;
             time = 0f; // Reset time to avoid accumulating the value
         }
@@ -55,6 +66,11 @@ public class CameraShaker : MonoBehaviour
     {
         time = 0f;
         wiggleTimeLeft = wiggleDuration;
+    }
+
+    public void ShakeCamera()
+    {
+        shakeTimeLeft = 5f;
     }
 
     // Make CameraShaker a singleton object

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
+
     [SerializeField] GameObject _ReducedInventoryPanel;
     [SerializeField] ItemData _example_item;
 
@@ -12,7 +13,6 @@ public class UIController : MonoBehaviour
     {
         Time.timeScale = 1;
         DontDestroyOnLoad(gameObject);
-
     }
     private void Update()
     {
