@@ -16,4 +16,4 @@ MonoBehaviour:
   InGameName: "\uD22C\uD1A4 \uD2A4\uB9BD"
   Icon: {fileID: 21300000, guid: ea21950b2ac00604c8aa9c4d82039376, type: 3}
   PriceMultiple: 5
-  FarmPrefab: {fileID: 5720306360725113020, guid: 1831edccbf4e7294c8d6c9837cd40761, type: 3}
+  FarmPrefab: {fileID: 7837216500642979358, guid: 9717b76e454535b498d71fdfd38877df, type: 3}
