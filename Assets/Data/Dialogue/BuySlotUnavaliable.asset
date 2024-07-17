@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BuySlotUnavaliable
   m_EditorClassIdentifier: 
   name: BuySlotUnavailable
-  Sentence: "\uC774 \uB3C8\uC73C\uB860 \uC548\uB418\uB124. \uB3C8\uC744 \uB354 \uBAA8\uC544\uC11C
-    \uB2E4\uC74C\uC5D0 \uB2E4\uC2DC \uC624\uC2DC\uAC8C\uB098."
+  Sentence: "\uC774 \uB3C8\uC73C\uB860 \uC5B4\uB9BC\uB3C4 \uC5C6\uC9C0. \uB3C8\uC744
+    \uB354 \uBAA8\uC544\uC11C \uC624\uC2DC\uAC8C!"
   HasReplyOption: 0
   ReplyOption1: 
   ReplyOption2: 

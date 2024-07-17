@@ -1295,6 +1295,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 823719b025dea2943a72ae74f940778c, type: 2}
   - {fileID: 11400000, guid: 8583498641cf41b4b8c603ee86c2b7d1, type: 2}
   _declineDialogue: {fileID: 11400000, guid: 15a13dc462e91ae45b20c1ded66af871, type: 2}
+  _allSlotOpenedDialogue: {fileID: 11400000, guid: 2872a3b5404db564b9ada6cf03131cb7, type: 2}
   _errorDialogue: {fileID: 11400000, guid: 342f7bd9be247bb45870cf5f69e15524, type: 2}
   _loanGaveDialogue: {fileID: 11400000, guid: 15cb12881d3995743ac2e5d1a75f957b, type: 2}
   loanTMPInputField: {fileID: 1810641547}
@@ -1330,7 +1331,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.30787665}
+  m_Offset: {x: -0.06751096, y: -1.9402013}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1341,7 +1342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.40727413}
+  m_Size: {x: 2.8453104, y: 3.6719236}
   m_EdgeRadius: 0
 --- !u!212 &1081822660
 SpriteRenderer:

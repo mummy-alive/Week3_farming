@@ -18,7 +18,7 @@ public class GMBank : MonoBehaviour
 
             int recentSlot = GetAvailableSlot();
             //Before adding this, Don't forget to mark 0~3rd slot to TRUE
-            if (recentSlot <4)
+            if (recentSlot <4 || recentSlot >= 16)
             {
                 Debug.Log("You have bought all available land.");
                 return false;
@@ -47,7 +47,7 @@ public class GMBank : MonoBehaviour
         FarmlandSlotStatusChange?.Invoke(recentSlot);
     }
 
-    private int GetAvailableSlot()
+    public int GetAvailableSlot()
     {
         for (int i = 0; i < MyConst.FARM_SLOT_NUM; i++)
             if (!FarmlandSlotStatus[i])
