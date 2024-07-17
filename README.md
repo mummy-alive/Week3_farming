@@ -27,17 +27,33 @@ Start button을 누르면 게임에 진입할 수 있습니다.
 
 인벤토리에서 아이템을 선택해 씨앗을 심고 매일 하루에 한 번 물을 주면 모종삽으로 튤립을 수확할 수 있습니다. 마을에 있는 상점에서 튤립 씨앗을 사고 수확한 튤립을 팔 수 있으며, 확률적으로 희귀하고 비싼 튤립을 수확할 수 있습니다.
 
+
+https://github.com/user-attachments/assets/e714b0dc-7dae-4573-b404-83e6f1bfcabb
+
+https://github.com/user-attachments/assets/17f2065f-09e4-480e-852f-fd718416097b
+
+https://github.com/user-attachments/assets/22b9df34-6ed8-423c-8bba-77f308ad0e30
+
+
+
+
 ### Dialogue System
 
-유저에게 정보를 전달하거나 유저의 인풋을 받아 게임을 진행할 수 있습니다.
+유저에게 정보를 전달하거나 유저의 input을 받아 게임을 진행할 수 있습니다.
 
 ### Game Time System
 
 6시에 일어나 24시에 하루가 시작되게 되며, 농장의 집에서 잠을 청하거나 집이 아닌 곳에서 24시가 지나게 되면 다음날 6시에 일어나게 됩니다.
 
 ### Finance
-
+키운 튤립을 상점에 팔아 돈을 벌고, 씨앗을 사서 다시 기를 수 있습니다. 
 은행에게서 추가로 돈을 빌리거나 돈을 내고 저당 잡힌 땅을 돌려받을 수 있습니다.
+
+https://github.com/user-attachments/assets/bdaf87af-1ec2-4968-bd51-5f710e8fc61c
+
+https://github.com/user-attachments/assets/aadd1b2d-8614-45f6-b68e-18de059fbef1
+
+
 
 튤립과 관련된 모든 물품의 가격이 폭등하는 튤립 가격과 연동되기 때문에 금융거래 시점을 신중하게 결정해야 합니다.
 
