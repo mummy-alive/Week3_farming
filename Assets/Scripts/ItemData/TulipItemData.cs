@@ -7,5 +7,5 @@ using UnityEngine;
 public class TulipItemData : ItemData   //flower 정보
 {
     public float PriceMultiple;
-    public Sprite FarmIcon;
+    public GameObject FarmPrefab;
 }
