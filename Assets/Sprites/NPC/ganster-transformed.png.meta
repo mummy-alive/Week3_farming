@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e76ad9e675de7345af61c886d396810
+guid: 43dd4151b81c08b48b61b0189f34bf59
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: ganster-transformed_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 52
-        width: 614
-        height: 119
+        x: 42
+        y: 226
+        width: 658
+        height: 880
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bd3676240336094ba0448dc789d52dd
-      internalID: 670601854
+      spriteID: a1829d573805e284b99594aac72a8d24
+      internalID: 1274546866
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1_0: 670601854
+      ganster-transformed_0: 1274546866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

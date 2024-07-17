@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BigBoatInvestment
   m_EditorClassIdentifier: 
   AskInvestmentDialogue: {fileID: 11400000, guid: 6f634b98461485e43a64bc9b92f01a51, type: 2}
-  BoatSprite: {fileID: 21300000, guid: caa65676622406a4a8efbc214a8a570f, type: 3}
+  BoatSprite: {fileID: 21300000, guid: d82fddc65f4b89543b5b0ead916ccd92, type: 3}
   Price: 200
   SuccessProb: 20
   MaxSeed: 20

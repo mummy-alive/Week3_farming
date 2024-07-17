@@ -45,6 +45,7 @@ public class GMInventory : MonoBehaviour {
             remainSlot -= 1;
         }
         InventoryUpdateEvent?.Invoke(_itemSlotList);
+        UIItemAlert.Instance.ShowItemAlert(itemData);
         return amount;
     }
 

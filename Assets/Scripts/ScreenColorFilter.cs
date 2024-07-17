@@ -82,7 +82,7 @@ public class ScreenColorFilter : MonoBehaviour
             elapsedTime = 0f;
             fadeDuration = 0f;
             isFadingToBlack = false;
-            filterImage.color = Color.clear;
+            filterImage.color = new Color(0, 0, 0, 1);;
         }
     }
 

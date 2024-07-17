@@ -30,9 +30,7 @@ public class CameraShaker : MonoBehaviour
         {
             camTransform = GetComponent<Transform>();
         }
-        originalPos = camTransform.localPosition;
-        ShakeCamera();
-        ScreenColorFilter.Instance.StartFadeOut();
+        originalPos = camTransform.localPosition;;
     }
 
     void Update()
