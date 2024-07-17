@@ -34,16 +34,20 @@ public class EastIndiaNPC : MonoBehaviour
             _daysLeft = 90;
             _isSailing = false;
             _boatArrived = true;
+            _NPCImage.enabled = true;
+            _NPCCollider.enabled = true;
+            _boatImage.enabled = true;
+            BoatResult();
         }
         if ( (!_isSailing) && (GMClock.Instance.GetGameDay() > 1))
         {
             int randNum = Random.Range(0, 10);
-            if (randNum < 1 ) _boatType = BoatType.NONE;
-            else if (randNum < 9) _boatType = BoatType.SMALLBOAT;
+            if (randNum < 5 ) _boatType = BoatType.NONE;
+            else if (randNum < 7) _boatType = BoatType.SMALLBOAT;
             else _boatType = BoatType.BIGBOAT;
-        } else { _daysLeft -= 1; }
-        if ( _isSailing) 
+        } else if ( _isSailing) 
         {
+            _daysLeft -= 1;
             _NPCImage.enabled = true;
             _NPCCollider.enabled = true;
             _boatImage.enabled = false;
