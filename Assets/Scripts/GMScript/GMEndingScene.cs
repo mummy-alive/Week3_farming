@@ -20,6 +20,7 @@ public class GMEndingScene : MonoBehaviour
     {
         if ( GMClock.Instance.GetGameDay() > 80)
         {
+            print("game ended");
             _UIReducedInventoryPanel.SetActive(false);
             _UIGoldClock.SetActive(false);
             if (GMGold.Instance.CurrDebtAmount > 0) { StartBadEndingAsync(); }
@@ -29,6 +30,7 @@ public class GMEndingScene : MonoBehaviour
 
     private async Task StartGoodEndingAsync()
     {
+        print("good Ending started");
         _goodEndingNPC.SetActive(true);
         foreach (var dialogue in _goodEndingDialogueList)
         {
@@ -40,6 +42,7 @@ public class GMEndingScene : MonoBehaviour
 
     private async Task StartBadEndingAsync()
     {
+        print("bad Ending started");
         _badEndingNPC.SetActive(true);
         foreach (var dialogue in _badEndingDialogueList)
         {
