@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Trowel
   InGameName: "\uBAA8\uC885\uC0BD"
-  Icon: {fileID: 21300000, guid: a099e297e67fe19488a544e3e46f5169, type: 3}
+  Icon: {fileID: 21300000, guid: 666a096589f16044993fa3e97c016934, type: 3}
