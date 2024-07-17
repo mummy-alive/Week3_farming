@@ -1,0 +1,4199 @@
+fileFormatVersion: 2
+guid: 697140cf9a4abc742be112ba0ab73c09
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Items Holder Day & Night Cycle_Frame_0
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 75
+      height: 75
+    spriteID: f181c7a4689b4834faa8d843071a5e6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_11
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 87
+      width: 75
+      height: 75
+    spriteID: a4bc9c200f1879742ac982a41de9146b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_22
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 170
+      width: 75
+      height: 75
+    spriteID: 911e7569ed0fbd54ab9d760b106dc4bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_33
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 253
+      width: 75
+      height: 75
+    spriteID: 113e6169d208a5047ade12b711551600
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_44
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 336
+      width: 75
+      height: 75
+    spriteID: cc3b3784aa4c1a84993b44d0a4e55386
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_55
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 419
+      width: 75
+      height: 75
+    spriteID: 638e32b2727b52746ba91d682b083fea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_66
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 502
+      width: 75
+      height: 75
+    spriteID: 9a7dc95395b0fa947945010033ef6671
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_79
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 834
+      width: 75
+      height: 46
+    spriteID: 972eae31f40a4fb4c919500aad39b99f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_90
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 888
+      width: 75
+      height: 46
+    spriteID: 3de167fd72861b24683324d688f6567d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 888}
+  - name: Items Holder Day & Night Cycle_Frame_101
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 942
+      width: 75
+      height: 46
+    spriteID: a8b07587d5e652040945af55c3444b3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 942}
+  - name: Items Holder Day & Night Cycle_Frame_112
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 4
+      width: 75
+      height: 46
+    spriteID: a4f371eff63f9c6438ed33efd50ee84b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_123
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 58
+      width: 75
+      height: 46
+    spriteID: 24238fe44de04e544b422163df81ade5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 58}
+  - name: Items Holder Day & Night Cycle_Frame_134
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 112
+      width: 75
+      height: 46
+    spriteID: b597d769822c0ef46a3252f77b86c8ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 112}
+  - name: Items Holder Day & Night Cycle_Frame_145
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 166
+      width: 75
+      height: 46
+    spriteID: 0b2e3e75154dd9e4a8f40d708d162bf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 166}
+  - name: Items Holder Day & Night Cycle_Frame_1
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 585
+      width: 75
+      height: 75
+    spriteID: 6a8fe301903908f44b3e8d293ec3c2c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_2
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 668
+      width: 75
+      height: 75
+    spriteID: 1966fe867fbc0a94e80bf4cd5e249082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_3
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 751
+      width: 75
+      height: 75
+    spriteID: 4a3158995b0cd0b4a8edcd7471c9768f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_4
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 834
+      width: 75
+      height: 75
+    spriteID: 17abc1b112f595c4cb4d4fc596eda625
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_5
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 917
+      width: 75
+      height: 75
+    spriteID: b9913d285dbedc243a423c5e8a211991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 917}
+  - name: Items Holder Day & Night Cycle_Frame_6
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 75
+      height: 75
+    spriteID: 6648e47812dae724e9235a498b9ffcdf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_7
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 87
+      width: 75
+      height: 75
+    spriteID: 6da212dc8ce53b041b5f2538920b6b74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_8
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 170
+      width: 75
+      height: 75
+    spriteID: 098ec2774a198b64eacb5b616cf7937c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_9
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 253
+      width: 75
+      height: 75
+    spriteID: fc02c6d1c6a17fe4b921f4df1787eaeb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_12
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 336
+      width: 75
+      height: 75
+    spriteID: 1e151743eb666314b8f72b29cd85c6bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_13
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 419
+      width: 75
+      height: 75
+    spriteID: adb6b062d4cb0de41af96dc0ff3e6662
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_14
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 502
+      width: 75
+      height: 75
+    spriteID: 0357b9030d15d14438e1bf89fda816e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_15
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 585
+      width: 75
+      height: 75
+    spriteID: cbae9d1c10c1aa84db8f28fe86c5ffb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_16
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 668
+      width: 75
+      height: 75
+    spriteID: 704612834f37e064481df676905fa772
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_17
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 751
+      width: 75
+      height: 75
+    spriteID: 5864be9b9f5f80a4fb0b6a4dc7cf5a94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_18
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 834
+      width: 75
+      height: 75
+    spriteID: 201892e2e74e59c4b9a1f04ca886d1e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_19
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 917
+      width: 75
+      height: 75
+    spriteID: 9b0ff808e3d79f94aabc311c838d5734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 917}
+  - name: Items Holder Day & Night Cycle_Frame_20
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 4
+      width: 75
+      height: 75
+    spriteID: d30f4c304aa704d4aa8dff5914e83892
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_23
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 87
+      width: 75
+      height: 75
+    spriteID: 8e698864c6aba2e4888b9cbb23d369ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_24
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 170
+      width: 75
+      height: 75
+    spriteID: 4a2d217d370006f4c99c92a52d266a71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_25
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 253
+      width: 75
+      height: 75
+    spriteID: c3413a309901f3849b3e84d00884e35f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_26
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 336
+      width: 75
+      height: 75
+    spriteID: 12e595c336235e5498fe5dce054e46e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_27
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 419
+      width: 75
+      height: 75
+    spriteID: 2944014eab3d3d24580af612889c058d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_28
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 502
+      width: 75
+      height: 75
+    spriteID: 44c6ca527b8aa8b4984cb4f96fbe52d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_29
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 585
+      width: 75
+      height: 75
+    spriteID: 5f4641370a203b445b741cefe75e4d56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_30
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 668
+      width: 75
+      height: 75
+    spriteID: 7b2f138aeb00cb84ba41853a3856669c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_31
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 751
+      width: 75
+      height: 75
+    spriteID: 4c906275e234ab24cab4e8d84ed1bd75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_34
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 834
+      width: 75
+      height: 75
+    spriteID: f075e36c1d8de2a4a9e9f98952670452
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_35
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 917
+      width: 75
+      height: 75
+    spriteID: 6111d83ece007a34baa0fa377bae0c6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 917}
+  - name: Items Holder Day & Night Cycle_Frame_36
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 4
+      width: 75
+      height: 75
+    spriteID: c77ad8ae307f03548b200cdb5e290896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_37
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 87
+      width: 75
+      height: 75
+    spriteID: c013603797bbeb14da66960d14698534
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_38
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 170
+      width: 75
+      height: 75
+    spriteID: 2180e44dea952a04dab5237f7a19cf5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_39
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 253
+      width: 75
+      height: 75
+    spriteID: ce26a7fdd38af5842acec0f7cb2a7551
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_40
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 336
+      width: 75
+      height: 75
+    spriteID: 49c0e49feea6f0844bde8d6b6c23d9bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_41
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 419
+      width: 75
+      height: 75
+    spriteID: 36ea21ab11b20634ca28d15b7c5b94f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_42
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 502
+      width: 75
+      height: 75
+    spriteID: 9ea350090f530e649ad8bd4d747c2037
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_45
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 585
+      width: 75
+      height: 75
+    spriteID: 8162e4b07ffab064fb899da0d364e16e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_46
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 668
+      width: 75
+      height: 75
+    spriteID: 142c9322b9184de41beabd8eb0a67592
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_47
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 751
+      width: 75
+      height: 75
+    spriteID: c92babbfe8841d54983829bd2e9b3360
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_48
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 834
+      width: 75
+      height: 75
+    spriteID: fb076b46aef0d124daacc66106db51fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_49
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 917
+      width: 75
+      height: 75
+    spriteID: 1849a24af251d34499cf039ea60197b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 917}
+  - name: Items Holder Day & Night Cycle_Frame_50
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 4
+      width: 75
+      height: 75
+    spriteID: 727578f20760e584784733952f5f04ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_51
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 87
+      width: 75
+      height: 75
+    spriteID: 46abc91660ec2cd4b814346fa405f75d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_52
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 170
+      width: 75
+      height: 75
+    spriteID: 52c085fc5d1fceb4396fe0968691854b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_53
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 253
+      width: 75
+      height: 75
+    spriteID: 8a3e8e4132b75fb4a80cfd9611e5a26b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_56
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 336
+      width: 75
+      height: 75
+    spriteID: ed45fe7ee1af30248a11ccf1e818c21e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_57
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 419
+      width: 75
+      height: 75
+    spriteID: fe07cd248dba36e47a757bf2a32f5dc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_58
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 502
+      width: 75
+      height: 75
+    spriteID: 4d3f0b44818616246b978e1d7745f1c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_59
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 585
+      width: 75
+      height: 75
+    spriteID: 0940e99b204b56b4b9bb6767cafafcb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_60
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 668
+      width: 75
+      height: 75
+    spriteID: d2a99e86c0ec7c24c9e9f766fe8eb1a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_61
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 751
+      width: 75
+      height: 75
+    spriteID: f591c85d077be844f8f068998bc1e1ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_62
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 834
+      width: 75
+      height: 75
+    spriteID: 6d136e1c0853e944ea0966d697ebb423
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 834}
+  - name: Items Holder Day & Night Cycle_Frame_63
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 917
+      width: 75
+      height: 75
+    spriteID: df133a7ef8157674c9f5b26a9ed6765d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 917}
+  - name: Items Holder Day & Night Cycle_Frame_64
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 4
+      width: 75
+      height: 75
+    spriteID: abfc927e10448234aa8e37b977fe7b48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_67
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 87
+      width: 75
+      height: 75
+    spriteID: 928a22e874b704f41a203d82ecbb59e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 87}
+  - name: Items Holder Day & Night Cycle_Frame_68
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 170
+      width: 75
+      height: 75
+    spriteID: bb34ea15972951b4fa1bcb5477cdb38e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 170}
+  - name: Items Holder Day & Night Cycle_Frame_69
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 253
+      width: 75
+      height: 75
+    spriteID: 29b5089ac0e87be42a1e85b4e8678eb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 253}
+  - name: Items Holder Day & Night Cycle_Frame_70
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 336
+      width: 75
+      height: 75
+    spriteID: ba195b86b0533fa45937eaf8b322fbec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 336}
+  - name: Items Holder Day & Night Cycle_Frame_71
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 419
+      width: 75
+      height: 75
+    spriteID: 6369034adbace3543970ac5e43675761
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 419}
+  - name: Items Holder Day & Night Cycle_Frame_72
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 502
+      width: 75
+      height: 75
+    spriteID: f56a2cd54d3f06741aad3a057a540c22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 502}
+  - name: Items Holder Day & Night Cycle_Frame_73
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 585
+      width: 75
+      height: 75
+    spriteID: f03f14ee57782fa4cb82f52bd538a729
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 585}
+  - name: Items Holder Day & Night Cycle_Frame_74
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 668
+      width: 75
+      height: 75
+    spriteID: c0a451f9409c7d041b639e3f04640800
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 668}
+  - name: Items Holder Day & Night Cycle_Frame_75
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.12}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 751
+      width: 75
+      height: 75
+    spriteID: fb5efe56dc03c214380d156ab299c5ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 751}
+  - name: Items Holder Day & Night Cycle_Frame_80
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 220
+      width: 75
+      height: 46
+    spriteID: 3a4a7fd264f3a0b43844938565d07d07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 220}
+  - name: Items Holder Day & Night Cycle_Frame_81
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 274
+      width: 75
+      height: 46
+    spriteID: e2d8b534e0560044ebb8037bd4421b1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 274}
+  - name: Items Holder Day & Night Cycle_Frame_82
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 328
+      width: 75
+      height: 46
+    spriteID: b0948936b8248fb4eb2cc2390c41580d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 328}
+  - name: Items Holder Day & Night Cycle_Frame_83
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 382
+      width: 75
+      height: 46
+    spriteID: 0059784ecfc50d248a535a19f0d42fc7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 382}
+  - name: Items Holder Day & Night Cycle_Frame_84
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 436
+      width: 75
+      height: 46
+    spriteID: de569bcc2c74f8b41b2717874100ccd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 436}
+  - name: Items Holder Day & Night Cycle_Frame_85
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 490
+      width: 75
+      height: 46
+    spriteID: dd97b19c41112e448b6181067b865293
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 490}
+  - name: Items Holder Day & Night Cycle_Frame_86
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 544
+      width: 75
+      height: 46
+    spriteID: 311a9376f10d4734daded127f01b271a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 544}
+  - name: Items Holder Day & Night Cycle_Frame_87
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 598
+      width: 75
+      height: 46
+    spriteID: 2fd331ba3a49b624194cf6241046619e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 598}
+  - name: Items Holder Day & Night Cycle_Frame_88
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 652
+      width: 75
+      height: 46
+    spriteID: 57040fe778510144ba85a75de1cd10a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 652}
+  - name: Items Holder Day & Night Cycle_Frame_91
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 706
+      width: 75
+      height: 46
+    spriteID: 27b087271f6769941b13d99f16eac978
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 706}
+  - name: Items Holder Day & Night Cycle_Frame_92
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 760
+      width: 75
+      height: 46
+    spriteID: d7f94aeeeb1df444cb5362db9a7a2170
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 760}
+  - name: Items Holder Day & Night Cycle_Frame_93
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 814
+      width: 75
+      height: 46
+    spriteID: 4d0d3f4de51d71c4bb0a35fd3c3ed8e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 814}
+  - name: Items Holder Day & Night Cycle_Frame_94
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 868
+      width: 75
+      height: 46
+    spriteID: 128f072dda392a046833e3145aef5610
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 868}
+  - name: Items Holder Day & Night Cycle_Frame_95
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 502
+      y: 922
+      width: 75
+      height: 46
+    spriteID: 02f1c31c45f013d4c95b800f3ac50aa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 502, y: 922}
+  - name: Items Holder Day & Night Cycle_Frame_96
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 4
+      width: 75
+      height: 46
+    spriteID: 41eed36a7df566a458c50629ed2c731e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_97
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 58
+      width: 75
+      height: 46
+    spriteID: 9fa03c9310bc2234588645a463126edd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 58}
+  - name: Items Holder Day & Night Cycle_Frame_98
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 112
+      width: 75
+      height: 46
+    spriteID: 6653369598f29314cba03554cda6f139
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 112}
+  - name: Items Holder Day & Night Cycle_Frame_99
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 166
+      width: 75
+      height: 46
+    spriteID: bc3209dd414d9424283034b45b33b236
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 166}
+  - name: Items Holder Day & Night Cycle_Frame_102
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 220
+      width: 75
+      height: 46
+    spriteID: 7912e2c6fa68e8044b1f0d11e2b7290c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 220}
+  - name: Items Holder Day & Night Cycle_Frame_103
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 274
+      width: 75
+      height: 46
+    spriteID: 9755a06b2c4442e4eb99edf2cc768a99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 274}
+  - name: Items Holder Day & Night Cycle_Frame_104
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 328
+      width: 75
+      height: 46
+    spriteID: 3a8d260cfa5bfd44791b5a8e845acc7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 328}
+  - name: Items Holder Day & Night Cycle_Frame_105
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 382
+      width: 75
+      height: 46
+    spriteID: 91cab1c64ff39064190d3f8b38b0246b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 382}
+  - name: Items Holder Day & Night Cycle_Frame_106
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 436
+      width: 75
+      height: 46
+    spriteID: c26a041b389890e4aa93f2dd5f4cb23b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 436}
+  - name: Items Holder Day & Night Cycle_Frame_107
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 490
+      width: 75
+      height: 46
+    spriteID: 0279f4648dec5634ab9c983d520b55d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 490}
+  - name: Items Holder Day & Night Cycle_Frame_108
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 544
+      width: 75
+      height: 46
+    spriteID: e6d90666289c87b41a780edbda801908
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 544}
+  - name: Items Holder Day & Night Cycle_Frame_109
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 598
+      width: 75
+      height: 46
+    spriteID: c66ac7b3d1934274c8de4fe28a3adc5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 598}
+  - name: Items Holder Day & Night Cycle_Frame_110
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 652
+      width: 75
+      height: 46
+    spriteID: a9d57909875caad43b3b6984a7f726ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 652}
+  - name: Items Holder Day & Night Cycle_Frame_113
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 706
+      width: 75
+      height: 46
+    spriteID: 6dcfe9732df016b4c9b27b45fe7b4fe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 706}
+  - name: Items Holder Day & Night Cycle_Frame_114
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 760
+      width: 75
+      height: 46
+    spriteID: 6ce82e11392623245bcd4d4e1d7b9dd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 760}
+  - name: Items Holder Day & Night Cycle_Frame_115
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 814
+      width: 75
+      height: 46
+    spriteID: e8afe65d5de0c9648bf84beff3c2be5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 814}
+  - name: Items Holder Day & Night Cycle_Frame_116
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 868
+      width: 75
+      height: 46
+    spriteID: 98c234a94b4c2414398c696b919bdce1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 868}
+  - name: Items Holder Day & Night Cycle_Frame_117
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 922
+      width: 75
+      height: 46
+    spriteID: 914df12c96022d04e821aaeb64a45a30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 585, y: 922}
+  - name: Items Holder Day & Night Cycle_Frame_118
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 4
+      width: 75
+      height: 46
+    spriteID: 975abe5bbadfbee4698612c29d48bb4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_119
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 58
+      width: 75
+      height: 46
+    spriteID: a96ebd9c34b335f4eadefcfc61bbd851
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 58}
+  - name: Items Holder Day & Night Cycle_Frame_120
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 112
+      width: 75
+      height: 46
+    spriteID: 66360b5f915c50d43b6e300e3310e018
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 112}
+  - name: Items Holder Day & Night Cycle_Frame_121
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 166
+      width: 75
+      height: 46
+    spriteID: b31a5937668d6574c92d0e45376eb67b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 166}
+  - name: Items Holder Day & Night Cycle_Frame_124
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 220
+      width: 75
+      height: 46
+    spriteID: 6ac43643cc9b7104fab74a36a8e1f791
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 220}
+  - name: Items Holder Day & Night Cycle_Frame_125
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 274
+      width: 75
+      height: 46
+    spriteID: 044dd443f008c5c439e5be71be83649f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 274}
+  - name: Items Holder Day & Night Cycle_Frame_126
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 328
+      width: 75
+      height: 46
+    spriteID: 43e6a444528a7fd408ef41784d58f88f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 328}
+  - name: Items Holder Day & Night Cycle_Frame_127
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 382
+      width: 75
+      height: 46
+    spriteID: cf38a01201e9f1040bdd36e0aefe85a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 382}
+  - name: Items Holder Day & Night Cycle_Frame_128
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 436
+      width: 75
+      height: 46
+    spriteID: 3cd11e15ac568b54284b9ad8d3b70783
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 436}
+  - name: Items Holder Day & Night Cycle_Frame_129
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 490
+      width: 75
+      height: 46
+    spriteID: 690735384ae453048bcb0bc571cca813
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 490}
+  - name: Items Holder Day & Night Cycle_Frame_130
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 544
+      width: 75
+      height: 46
+    spriteID: 82ecb673880638e4aac2fc349dc96094
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 544}
+  - name: Items Holder Day & Night Cycle_Frame_131
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 598
+      width: 75
+      height: 46
+    spriteID: b069e3590b8eef24c92e770244b6e242
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 598}
+  - name: Items Holder Day & Night Cycle_Frame_132
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 652
+      width: 75
+      height: 46
+    spriteID: 86a8183c38f56824e96c832406723bc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 652}
+  - name: Items Holder Day & Night Cycle_Frame_135
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 706
+      width: 75
+      height: 46
+    spriteID: f7b479fff0b691f469781c881c0a4e18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 706}
+  - name: Items Holder Day & Night Cycle_Frame_136
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 760
+      width: 75
+      height: 46
+    spriteID: bc29da5c5a798d4468354a73f5726ccd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 760}
+  - name: Items Holder Day & Night Cycle_Frame_137
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 814
+      width: 75
+      height: 46
+    spriteID: 92021349472b68d42a065454df8dff7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 814}
+  - name: Items Holder Day & Night Cycle_Frame_138
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 868
+      width: 75
+      height: 46
+    spriteID: 48590869a217915468caec69416a2d38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 868}
+  - name: Items Holder Day & Night Cycle_Frame_139
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 922
+      width: 75
+      height: 46
+    spriteID: 7efc651573199894b99d37a1dc43123a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 668, y: 922}
+  - name: Items Holder Day & Night Cycle_Frame_140
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 4
+      width: 75
+      height: 46
+    spriteID: 88d0288094c9d8849b9c611745efd493
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 4}
+  - name: Items Holder Day & Night Cycle_Frame_141
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 58
+      width: 75
+      height: 46
+    spriteID: 332eb4ca227e32a4c82f13408f9e692d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 58}
+  - name: Items Holder Day & Night Cycle_Frame_142
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 112
+      width: 75
+      height: 46
+    spriteID: cf15a6ba886708f42bcbc7d22c9032f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 112}
+  - name: Items Holder Day & Night Cycle_Frame_143
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 166
+      width: 75
+      height: 46
+    spriteID: 22e96ca1d2fda7a43b72482d589640b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 166}
+  - name: Items Holder Day & Night Cycle_Frame_146
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 220
+      width: 75
+      height: 46
+    spriteID: 5dbd1c30be1713e469e702fb96ffe1f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 220}
+  - name: Items Holder Day & Night Cycle_Frame_147
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 274
+      width: 75
+      height: 46
+    spriteID: 153f1123a8c9cf54eb554fcdaf1567a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 274}
+  - name: Items Holder Day & Night Cycle_Frame_148
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 328
+      width: 75
+      height: 46
+    spriteID: 9042260cd5cabc0469d93fcfba26243a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 328}
+  - name: Items Holder Day & Night Cycle_Frame_149
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 382
+      width: 75
+      height: 46
+    spriteID: 66ea4eaba46a5764994ee3964b5fece0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 382}
+  - name: Items Holder Day & Night Cycle_Frame_150
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 436
+      width: 75
+      height: 46
+    spriteID: bbf53734ee2807f4a96d992bb4582de0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 436}
+  - name: Items Holder Day & Night Cycle_Frame_151
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 490
+      width: 75
+      height: 46
+    spriteID: d9e89e465d1d85a4fba385e6c644273b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 490}
+  - name: Items Holder Day & Night Cycle_Frame_152
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 544
+      width: 75
+      height: 46
+    spriteID: 7b696e4664f2c314a910a71ff5002450
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 544}
+  - name: Items Holder Day & Night Cycle_Frame_153
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 598
+      width: 75
+      height: 46
+    spriteID: dbbe8b6640d370242991338ed1b02c15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 598}
+  - name: Items Holder Day & Night Cycle_Frame_154
+    originalName: 
+    pivot: {x: 0.4933333, y: -0.826087}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 751
+      y: 652
+      width: 75
+      height: 46
+    spriteID: b6570072b537ce44aa86bff7b087b1f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 751, y: 652}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2043343452
+    name: Items Holder Day & Night Cycle
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Items Holder Day & Night Cycle_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: f181c7a4689b4834faa8d843071a5e6f
+    - name: Items Holder Day & Night Cycle_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: a4bc9c200f1879742ac982a41de9146b
+    - name: Items Holder Day & Night Cycle_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 911e7569ed0fbd54ab9d760b106dc4bb
+    - name: Items Holder Day & Night Cycle_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 113e6169d208a5047ade12b711551600
+    - name: Items Holder Day & Night Cycle_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: cc3b3784aa4c1a84993b44d0a4e55386
+    - name: Items Holder Day & Night Cycle_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 638e32b2727b52746ba91d682b083fea
+    - name: Items Holder Day & Night Cycle_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 9a7dc95395b0fa947945010033ef6671
+    - name: Items Holder Day & Night Cycle_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 972eae31f40a4fb4c919500aad39b99f
+    - name: Items Holder Day & Night Cycle_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 3de167fd72861b24683324d688f6567d
+    - name: Items Holder Day & Night Cycle_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: a8b07587d5e652040945af55c3444b3e
+    - name: Items Holder Day & Night Cycle_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: a4f371eff63f9c6438ed33efd50ee84b
+    - name: Items Holder Day & Night Cycle_Frame_123
+      frameIndex: 123
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 24238fe44de04e544b422163df81ade5
+    - name: Items Holder Day & Night Cycle_Frame_134
+      frameIndex: 134
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: b597d769822c0ef46a3252f77b86c8ab
+    - name: Items Holder Day & Night Cycle_Frame_145
+      frameIndex: 145
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 0b2e3e75154dd9e4a8f40d708d162bf0
+    - name: Items Holder Day & Night Cycle_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6a8fe301903908f44b3e8d293ec3c2c4
+    - name: Items Holder Day & Night Cycle_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 1966fe867fbc0a94e80bf4cd5e249082
+    - name: Items Holder Day & Night Cycle_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 4a3158995b0cd0b4a8edcd7471c9768f
+    - name: Items Holder Day & Night Cycle_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 17abc1b112f595c4cb4d4fc596eda625
+    - name: Items Holder Day & Night Cycle_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: b9913d285dbedc243a423c5e8a211991
+    - name: Items Holder Day & Night Cycle_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6648e47812dae724e9235a498b9ffcdf
+    - name: Items Holder Day & Night Cycle_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6da212dc8ce53b041b5f2538920b6b74
+    - name: Items Holder Day & Night Cycle_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 098ec2774a198b64eacb5b616cf7937c
+    - name: Items Holder Day & Night Cycle_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: fc02c6d1c6a17fe4b921f4df1787eaeb
+    - name: Items Holder Day & Night Cycle_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 1e151743eb666314b8f72b29cd85c6bd
+    - name: Items Holder Day & Night Cycle_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: adb6b062d4cb0de41af96dc0ff3e6662
+    - name: Items Holder Day & Night Cycle_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 0357b9030d15d14438e1bf89fda816e2
+    - name: Items Holder Day & Night Cycle_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: cbae9d1c10c1aa84db8f28fe86c5ffb2
+    - name: Items Holder Day & Night Cycle_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 704612834f37e064481df676905fa772
+    - name: Items Holder Day & Night Cycle_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 5864be9b9f5f80a4fb0b6a4dc7cf5a94
+    - name: Items Holder Day & Night Cycle_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 201892e2e74e59c4b9a1f04ca886d1e6
+    - name: Items Holder Day & Night Cycle_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 9b0ff808e3d79f94aabc311c838d5734
+    - name: Items Holder Day & Night Cycle_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: d30f4c304aa704d4aa8dff5914e83892
+    - name: Items Holder Day & Night Cycle_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 8e698864c6aba2e4888b9cbb23d369ba
+    - name: Items Holder Day & Night Cycle_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 4a2d217d370006f4c99c92a52d266a71
+    - name: Items Holder Day & Night Cycle_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: c3413a309901f3849b3e84d00884e35f
+    - name: Items Holder Day & Night Cycle_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 12e595c336235e5498fe5dce054e46e8
+    - name: Items Holder Day & Night Cycle_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 2944014eab3d3d24580af612889c058d
+    - name: Items Holder Day & Night Cycle_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 44c6ca527b8aa8b4984cb4f96fbe52d7
+    - name: Items Holder Day & Night Cycle_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 5f4641370a203b445b741cefe75e4d56
+    - name: Items Holder Day & Night Cycle_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 7b2f138aeb00cb84ba41853a3856669c
+    - name: Items Holder Day & Night Cycle_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 4c906275e234ab24cab4e8d84ed1bd75
+    - name: Items Holder Day & Night Cycle_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: f075e36c1d8de2a4a9e9f98952670452
+    - name: Items Holder Day & Night Cycle_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6111d83ece007a34baa0fa377bae0c6e
+    - name: Items Holder Day & Night Cycle_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: c77ad8ae307f03548b200cdb5e290896
+    - name: Items Holder Day & Night Cycle_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: c013603797bbeb14da66960d14698534
+    - name: Items Holder Day & Night Cycle_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 2180e44dea952a04dab5237f7a19cf5e
+    - name: Items Holder Day & Night Cycle_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: ce26a7fdd38af5842acec0f7cb2a7551
+    - name: Items Holder Day & Night Cycle_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 49c0e49feea6f0844bde8d6b6c23d9bf
+    - name: Items Holder Day & Night Cycle_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 36ea21ab11b20634ca28d15b7c5b94f1
+    - name: Items Holder Day & Night Cycle_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 9ea350090f530e649ad8bd4d747c2037
+    - name: Items Holder Day & Night Cycle_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 8162e4b07ffab064fb899da0d364e16e
+    - name: Items Holder Day & Night Cycle_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 142c9322b9184de41beabd8eb0a67592
+    - name: Items Holder Day & Night Cycle_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: c92babbfe8841d54983829bd2e9b3360
+    - name: Items Holder Day & Night Cycle_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: fb076b46aef0d124daacc66106db51fb
+    - name: Items Holder Day & Night Cycle_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 1849a24af251d34499cf039ea60197b3
+    - name: Items Holder Day & Night Cycle_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 727578f20760e584784733952f5f04ea
+    - name: Items Holder Day & Night Cycle_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 46abc91660ec2cd4b814346fa405f75d
+    - name: Items Holder Day & Night Cycle_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 52c085fc5d1fceb4396fe0968691854b
+    - name: Items Holder Day & Night Cycle_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 8a3e8e4132b75fb4a80cfd9611e5a26b
+    - name: Items Holder Day & Night Cycle_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: ed45fe7ee1af30248a11ccf1e818c21e
+    - name: Items Holder Day & Night Cycle_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: fe07cd248dba36e47a757bf2a32f5dc9
+    - name: Items Holder Day & Night Cycle_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 4d3f0b44818616246b978e1d7745f1c9
+    - name: Items Holder Day & Night Cycle_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 0940e99b204b56b4b9bb6767cafafcb8
+    - name: Items Holder Day & Night Cycle_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: d2a99e86c0ec7c24c9e9f766fe8eb1a7
+    - name: Items Holder Day & Night Cycle_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: f591c85d077be844f8f068998bc1e1ae
+    - name: Items Holder Day & Night Cycle_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6d136e1c0853e944ea0966d697ebb423
+    - name: Items Holder Day & Night Cycle_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: df133a7ef8157674c9f5b26a9ed6765d
+    - name: Items Holder Day & Night Cycle_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: abfc927e10448234aa8e37b977fe7b48
+    - name: Items Holder Day & Night Cycle_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 928a22e874b704f41a203d82ecbb59e2
+    - name: Items Holder Day & Night Cycle_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: bb34ea15972951b4fa1bcb5477cdb38e
+    - name: Items Holder Day & Night Cycle_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 29b5089ac0e87be42a1e85b4e8678eb8
+    - name: Items Holder Day & Night Cycle_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: ba195b86b0533fa45937eaf8b322fbec
+    - name: Items Holder Day & Night Cycle_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: 6369034adbace3543970ac5e43675761
+    - name: Items Holder Day & Night Cycle_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: f56a2cd54d3f06741aad3a057a540c22
+    - name: Items Holder Day & Night Cycle_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: f03f14ee57782fa4cb82f52bd538a729
+    - name: Items Holder Day & Night Cycle_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: c0a451f9409c7d041b639e3f04640800
+    - name: Items Holder Day & Night Cycle_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 9
+        width: 75
+        height: 75
+      spriteId: fb5efe56dc03c214380d156ab299c5ba
+    - name: Items Holder Day & Night Cycle_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 3a4a7fd264f3a0b43844938565d07d07
+    - name: Items Holder Day & Night Cycle_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: e2d8b534e0560044ebb8037bd4421b1d
+    - name: Items Holder Day & Night Cycle_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: b0948936b8248fb4eb2cc2390c41580d
+    - name: Items Holder Day & Night Cycle_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 0059784ecfc50d248a535a19f0d42fc7
+    - name: Items Holder Day & Night Cycle_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: de569bcc2c74f8b41b2717874100ccd9
+    - name: Items Holder Day & Night Cycle_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: dd97b19c41112e448b6181067b865293
+    - name: Items Holder Day & Night Cycle_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 311a9376f10d4734daded127f01b271a
+    - name: Items Holder Day & Night Cycle_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 2fd331ba3a49b624194cf6241046619e
+    - name: Items Holder Day & Night Cycle_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 57040fe778510144ba85a75de1cd10a8
+    - name: Items Holder Day & Night Cycle_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 27b087271f6769941b13d99f16eac978
+    - name: Items Holder Day & Night Cycle_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: d7f94aeeeb1df444cb5362db9a7a2170
+    - name: Items Holder Day & Night Cycle_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 4d0d3f4de51d71c4bb0a35fd3c3ed8e8
+    - name: Items Holder Day & Night Cycle_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 128f072dda392a046833e3145aef5610
+    - name: Items Holder Day & Night Cycle_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 02f1c31c45f013d4c95b800f3ac50aa5
+    - name: Items Holder Day & Night Cycle_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 41eed36a7df566a458c50629ed2c731e
+    - name: Items Holder Day & Night Cycle_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 9fa03c9310bc2234588645a463126edd
+    - name: Items Holder Day & Night Cycle_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 6653369598f29314cba03554cda6f139
+    - name: Items Holder Day & Night Cycle_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: bc3209dd414d9424283034b45b33b236
+    - name: Items Holder Day & Night Cycle_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 7912e2c6fa68e8044b1f0d11e2b7290c
+    - name: Items Holder Day & Night Cycle_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 9755a06b2c4442e4eb99edf2cc768a99
+    - name: Items Holder Day & Night Cycle_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 3a8d260cfa5bfd44791b5a8e845acc7d
+    - name: Items Holder Day & Night Cycle_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 91cab1c64ff39064190d3f8b38b0246b
+    - name: Items Holder Day & Night Cycle_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: c26a041b389890e4aa93f2dd5f4cb23b
+    - name: Items Holder Day & Night Cycle_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 0279f4648dec5634ab9c983d520b55d3
+    - name: Items Holder Day & Night Cycle_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: e6d90666289c87b41a780edbda801908
+    - name: Items Holder Day & Night Cycle_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: c66ac7b3d1934274c8de4fe28a3adc5c
+    - name: Items Holder Day & Night Cycle_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: a9d57909875caad43b3b6984a7f726ed
+    - name: Items Holder Day & Night Cycle_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 6dcfe9732df016b4c9b27b45fe7b4fe2
+    - name: Items Holder Day & Night Cycle_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 6ce82e11392623245bcd4d4e1d7b9dd1
+    - name: Items Holder Day & Night Cycle_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: e8afe65d5de0c9648bf84beff3c2be5c
+    - name: Items Holder Day & Night Cycle_Frame_116
+      frameIndex: 116
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 98c234a94b4c2414398c696b919bdce1
+    - name: Items Holder Day & Night Cycle_Frame_117
+      frameIndex: 117
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 914df12c96022d04e821aaeb64a45a30
+    - name: Items Holder Day & Night Cycle_Frame_118
+      frameIndex: 118
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 975abe5bbadfbee4698612c29d48bb4f
+    - name: Items Holder Day & Night Cycle_Frame_119
+      frameIndex: 119
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: a96ebd9c34b335f4eadefcfc61bbd851
+    - name: Items Holder Day & Night Cycle_Frame_120
+      frameIndex: 120
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 66360b5f915c50d43b6e300e3310e018
+    - name: Items Holder Day & Night Cycle_Frame_121
+      frameIndex: 121
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: b31a5937668d6574c92d0e45376eb67b
+    - name: Items Holder Day & Night Cycle_Frame_124
+      frameIndex: 124
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 6ac43643cc9b7104fab74a36a8e1f791
+    - name: Items Holder Day & Night Cycle_Frame_125
+      frameIndex: 125
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 044dd443f008c5c439e5be71be83649f
+    - name: Items Holder Day & Night Cycle_Frame_126
+      frameIndex: 126
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 43e6a444528a7fd408ef41784d58f88f
+    - name: Items Holder Day & Night Cycle_Frame_127
+      frameIndex: 127
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: cf38a01201e9f1040bdd36e0aefe85a2
+    - name: Items Holder Day & Night Cycle_Frame_128
+      frameIndex: 128
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 3cd11e15ac568b54284b9ad8d3b70783
+    - name: Items Holder Day & Night Cycle_Frame_129
+      frameIndex: 129
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 690735384ae453048bcb0bc571cca813
+    - name: Items Holder Day & Night Cycle_Frame_130
+      frameIndex: 130
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 82ecb673880638e4aac2fc349dc96094
+    - name: Items Holder Day & Night Cycle_Frame_131
+      frameIndex: 131
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: b069e3590b8eef24c92e770244b6e242
+    - name: Items Holder Day & Night Cycle_Frame_132
+      frameIndex: 132
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 86a8183c38f56824e96c832406723bc3
+    - name: Items Holder Day & Night Cycle_Frame_135
+      frameIndex: 135
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: f7b479fff0b691f469781c881c0a4e18
+    - name: Items Holder Day & Night Cycle_Frame_136
+      frameIndex: 136
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: bc29da5c5a798d4468354a73f5726ccd
+    - name: Items Holder Day & Night Cycle_Frame_137
+      frameIndex: 137
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 92021349472b68d42a065454df8dff7c
+    - name: Items Holder Day & Night Cycle_Frame_138
+      frameIndex: 138
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 48590869a217915468caec69416a2d38
+    - name: Items Holder Day & Night Cycle_Frame_139
+      frameIndex: 139
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 7efc651573199894b99d37a1dc43123a
+    - name: Items Holder Day & Night Cycle_Frame_140
+      frameIndex: 140
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 88d0288094c9d8849b9c611745efd493
+    - name: Items Holder Day & Night Cycle_Frame_141
+      frameIndex: 141
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 332eb4ca227e32a4c82f13408f9e692d
+    - name: Items Holder Day & Night Cycle_Frame_142
+      frameIndex: 142
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: cf15a6ba886708f42bcbc7d22c9032f6
+    - name: Items Holder Day & Night Cycle_Frame_143
+      frameIndex: 143
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 22e96ca1d2fda7a43b72482d589640b7
+    - name: Items Holder Day & Night Cycle_Frame_146
+      frameIndex: 146
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 5dbd1c30be1713e469e702fb96ffe1f6
+    - name: Items Holder Day & Night Cycle_Frame_147
+      frameIndex: 147
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 153f1123a8c9cf54eb554fcdaf1567a9
+    - name: Items Holder Day & Night Cycle_Frame_148
+      frameIndex: 148
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 9042260cd5cabc0469d93fcfba26243a
+    - name: Items Holder Day & Night Cycle_Frame_149
+      frameIndex: 149
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 66ea4eaba46a5764994ee3964b5fece0
+    - name: Items Holder Day & Night Cycle_Frame_150
+      frameIndex: 150
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: bbf53734ee2807f4a96d992bb4582de0
+    - name: Items Holder Day & Night Cycle_Frame_151
+      frameIndex: 151
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: d9e89e465d1d85a4fba385e6c644273b
+    - name: Items Holder Day & Night Cycle_Frame_152
+      frameIndex: 152
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: 7b696e4664f2c314a910a71ff5002450
+    - name: Items Holder Day & Night Cycle_Frame_153
+      frameIndex: 153
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: dbbe8b6640d370242991338ed1b02c15
+    - name: Items Holder Day & Night Cycle_Frame_154
+      frameIndex: 154
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 38
+        width: 75
+        height: 46
+      spriteId: b6570072b537ce44aa86bff7b087b1f8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 96}
