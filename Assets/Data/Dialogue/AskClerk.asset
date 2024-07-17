@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: AskClerk
   m_EditorClassIdentifier: 
   name: AskClerk
-  Sentence: "\uC624\uB79C\uB9CC\uC774\uAD70. \uADF8\uB798, \uBB34\uC2A8 \uC6A9\uBB34\uB85C
-    \uC654\uC9C0?"
+  Sentence: "\uC624\uB79C\uB9CC\uC774\uAD70, \uBB34\uC2A8 \uC6A9\uBB34\uB85C \uC654\uC9C0?"
   HasReplyOption: 1
   ReplyOption1: "\uB545\uC744 \uAD6C\uB9E4\uD55C\uB2E4"
   ReplyOption2: "\uB300\uCD9C\uC744 \uBB38\uC758\uD55C\uB2E4"

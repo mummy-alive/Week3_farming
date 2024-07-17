@@ -214,6 +214,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: plowed_soil_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4738a542078ee9e47bff15946cdf96fe
+      internalID: -1541774639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -230,6 +251,7 @@ TextureImporter:
       plowed_soil_2: -164770137
       plowed_soil_3: 1411421617
       plowed_soil_4: -1649039312
+      plowed_soil_5: -1541774639
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

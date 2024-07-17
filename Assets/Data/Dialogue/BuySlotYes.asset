@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BuySlotYes
   m_EditorClassIdentifier: 
   name: BuySlotYes
-  Sentence: "\uACE0\uB9D9\uB124. \uB545\uC740 \uBC14\uB85C \uC0AC\uB78C\uC744 \uBCF4\uB0B4
-    \uC5F4\uC5B4\uB450\uACA0\uB124. \uB610 \uC624\uAC8C\uB098."
+  Sentence: "\uD558\uB098 \uB458 \uC14B... \uB410\uB124. \uB545\uC740 \uBC14\uB85C
+    \uC0AC\uB78C\uC744 \uBCF4\uB0B4 \uC5F4\uC5B4\uB450\uC9C0."
   HasReplyOption: 0
   ReplyOption1: 
   ReplyOption2: 

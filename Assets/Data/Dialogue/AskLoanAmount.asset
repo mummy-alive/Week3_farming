@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AskLoanAmount
   m_EditorClassIdentifier: 
   name: AskLoanAmount
-  Sentence: "... \uD55C \uBC88 \uB4E4\uC5B4\uB098 \uBD04\uC138. \uC5BC\uB9C8\uB098
-    \uD544\uC694\uD55C\uAC90\uAC00?"
+  Sentence: "... \uD2A4\uB9BD \uD22C\uC790? \uBB50, \uC81C\uB300\uB85C \uAC1A\uB294\uB2E4\uBA74
+    \uC548\uB420 \uAC83\uB3C4 \uC5C6\uC9C0. \uC5BC\uB9C8\uB098 \uD544\uC694\uD55C\uAC00?"
   HasReplyOption: 0
   ReplyOption1: 
   ReplyOption2: 

@@ -50,6 +50,14 @@ public class GMGold : MonoBehaviour
         DebtAmountChangeEvent?.Invoke(CurrDebtAmount);
     }
 
+    private void AddInterest()
+    {
+        Debug.Log("This is running.. add interest");
+        CurrDebtAmount = (int)(1.05 * CurrDebtAmount);
+        DebtAmountChangeEvent?.Invoke(CurrDebtAmount);
+        Debug.Log("This is running.. add interest1111");
+
+    }
     // Make GMGold a singleton object
     private static GMGold _instance;
     public static GMGold Instance
@@ -69,5 +77,6 @@ public class GMGold : MonoBehaviour
         if (_instance == null) _instance = this;
         else if (_instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+        GMClock.DayChangeEvent += AddInterest;
     }
 }
