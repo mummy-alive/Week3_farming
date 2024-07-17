@@ -26,6 +26,8 @@ public class BankManager : MonoBehaviour
     [SerializeField]
     private Dialogue _declineDialogue;
     [SerializeField]
+    private Dialogue _allSlotOpenedDialogue;
+    [SerializeField]
     private Dialogue _errorDialogue;
     [SerializeField]
     private Dialogue _loanGaveDialogue;
@@ -65,7 +67,23 @@ public class BankManager : MonoBehaviour
 
     private async Task AskForNewSlot()
     {
-        DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_askDialogue[1]);
+        int recentSlot = GMBank.Instance.GetAvailableSlot();
+
+        if(recentSlot < 4 || recentSlot >= 16)
+        {
+            GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_allSlotOpenedDialogue);
+            return;
+        }
+        Dialogue tellSlotPrice = new Dialogue
+        {
+            Sentence = $"어디보자... 자네가 이 땅을 담보로 잡은 대출은 {MyConst.FARM_SLOT_PRICE[recentSlot]}휠던일세.",
+            HasReplyOption = true,
+            ReplyOption1 = "구매한다",
+            ReplyOption2 = "돌아간다"
+        };
+
+        DialogueReply reply = await GMDataHolder.Instance.UIDialogue.StartDialogueAsync(tellSlotPrice); //가격 나온 부부ㄴ
+
         if (reply == DialogueReply.Option1)
         {
             bool ans = GMBank.Instance.BuyNewSlot();

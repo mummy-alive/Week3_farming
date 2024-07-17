@@ -16,6 +16,8 @@ public class  GMFarm: MonoBehaviour
     private List<FarmlandSlot> _farmlandSlotList = new List<FarmlandSlot>();
     [SerializeField]
     private Dialogue _askDialogue;
+    [SerializeField]
+    private Dialogue _alarmChooseSeed;
     private bool[] _farmlandSlotStatus = new bool[17];
     private void Awake()
     {
@@ -57,11 +59,16 @@ public class  GMFarm: MonoBehaviour
     }
     public async void PlantOnFarmland(FarmlandSlot slot, Vector2 position)
     {
+        UserStatus userStatus = UserStatus.Instance;
+        if (userStatus.selectedInventorySlot?.itemData is not SeedItemData)
+        {
+            GMDataHolder.Instance.UIDialogue.StartDialogueAsync(_alarmChooseSeed);
+            return;
+        }
+        SeedItemData selectedSeed = SelectSeed();
         bool shouldPlant = await AskAndPlant();
         if (shouldPlant)
         {
-            SeedItemData selectedSeed = SelectSeed();
-            UserStatus userStatus = UserStatus.Instance;
             if (userStatus == null)
             {
                 Debug.Log("No seed selected!");

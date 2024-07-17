@@ -7,12 +7,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class FarmlandSlot: MonoBehaviour
-{    
+public class FarmlandSlot : MonoBehaviour
+{
     public GameObject[] plantedPlantPrefab = new GameObject[3];
     public GameObject plantedPlantInstance;
     public GameObject forSaleSignPrefab;
-    public GameObject forSaleSignInstance; 
+    public GameObject forSaleSignInstance;
 
     private bool isPlanted = false;
     private TulipItemData currentTulip;
@@ -30,7 +30,7 @@ public class FarmlandSlot: MonoBehaviour
         this.currentTulip = null;
         this.daysProgress = 0;
         this.daysRequired = 0;
-        this.isAlreadyWatered= false;
+        this.isAlreadyWatered = false;
     }
     private void Start()
     {
@@ -110,13 +110,14 @@ public class FarmlandSlot: MonoBehaviour
         }
     }
 
-    private void CheckIfMe(FarmlandSlot slot, TulipItemData tulip, SeedItemData seed, Vector2 position) 
+    private void CheckIfMe(FarmlandSlot slot, TulipItemData tulip, SeedItemData seed, Vector2 position)
     {
         if (slot != this)
             return;
         PlantSeed(seed, tulip, position);
     }
     public void PlantSeed(SeedItemData seed, TulipItemData tulip, Vector2 Position)
+    //public void PlantSeed(SeedItemData seed, TulipItemData tulip, Vector2 Position)
     {
         if(isPlanted) return;
         isPlanted = true;
@@ -129,7 +130,7 @@ public class FarmlandSlot: MonoBehaviour
         plantedPlantInstance = Instantiate(plantedPlantPrefab[0], midPoint, Quaternion.identity);
         plantedPlantInstance.transform.SetParent(gameObject.transform);
     }
-    public void WaterPlant() 
+    public void WaterPlant()
     {
         if (daysProgress >= daysRequired)
         {
@@ -143,15 +144,15 @@ public class FarmlandSlot: MonoBehaviour
             print("Watered successfully!");
         }
         else
-            Debug.Log("This plant is already watered! Try tomorrow");         
+            Debug.Log("This plant is already watered! Try tomorrow");
     }
 
     public TulipItemData Harvest()
-    {       
+    {
         if (daysProgress >= daysRequired)
         {
             UserStatus userStatus = UserStatus.Instance;
-            if(GMInventory.Instance.AddItemToInventory(currentTulip,1) > 0 )
+            if (GMInventory.Instance.AddItemToInventory(currentTulip, 1) > 0)
             {
                 Debug.Log("Inventory is full!");
                 return null;

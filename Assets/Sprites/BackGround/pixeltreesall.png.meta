@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0af19faa2cc793349b569dfd78e6fc4b
+guid: d173eef008b54db4c80f13dc3da20009
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,7 +108,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pixeltreesall_0
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 6
+        width: 55
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 0, z: 10, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3544154310dd02940a6e5df7df0da7f2
+      internalID: 2043411195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixeltreesall_0: 2043411195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
