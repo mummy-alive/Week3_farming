@@ -44,6 +44,9 @@ TagManager:
   - name: FarmLand
     uniqueID: 4078884883
     locked: 0
+  - name: WateredGround
+    uniqueID: 2068795827
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
