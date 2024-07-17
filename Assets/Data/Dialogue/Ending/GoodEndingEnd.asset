@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a78a3311e9bb534b8f12bf4ae286595, type: 3}
+  m_Name: GoodEndingEnd
+  m_EditorClassIdentifier: 
+  name: GoodEnding
+  Sentence: "\uACE0\uB09C\uACFC \uC5ED\uACBD \uB05D\uC5D0 \uB4DC\uB514\uC5B4 \uBE5A\uC744
+    \uB2E4 \uAC1A\uC558\uB2E4... \uC18C\uBB38\uC5D0 \uB530\uB974\uC790\uBA74 \uB0B4\uAC00
+    \uBE5A\uC744 \uB2E4 \uAC1A\uC740 \uC9C1\uD6C4 \uAC19\uC740 \uC2DC\uAE30 \uD2A4\uB9BD\uC5D0
+    \uD22C\uAE30\uD588\uB2E4\uAC00 \uBE5A\uC744 \uAC1A\uC9C0 \uBABB\uD55C \uC774\uB4E4\uC740
+    \uBAA8\uB450 \uD589\uBC29\uC774 \uBB18\uC5F0\uD574\uC84C\uB2E4\uACE0 \uD55C\uB2E4..."
+  HasReplyOption: 0
+  ReplyOption1: 
+  ReplyOption2: 

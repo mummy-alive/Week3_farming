@@ -78,5 +78,6 @@ public class GMGold : MonoBehaviour
         else if (_instance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
         GMClock.DayChangeEvent += AddInterest;
+        CurrDebtAmount = 100000;
     }
 }
